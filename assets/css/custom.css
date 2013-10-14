@@ -2,3 +2,26 @@
 	margin: 0 auto;
 	width: 500px;
 }
+.address {
+	margin: 20px 0;
+	overflow: hidden;
+}
+.address-heading {
+	float: left;
+	height: 80px;
+	margin-right: 20px;
+	width: 135px;
+}
+.address-heading h2 {
+	margin: 0;
+	padding: 22px 0;
+}
+.address-body {
+	
+}
+.map {
+	border: solid royalblue 2px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
