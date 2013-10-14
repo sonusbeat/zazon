@@ -8,13 +8,13 @@
 }
 .address-heading {
 	float: left;
-	height: 80px;
+	height: 100px;
 	margin-right: 20px;
 	width: 135px;
 }
 .address-heading h2 {
 	margin: 0;
-	padding: 22px 0;
+	padding: 32px 0;
 }
 .address-body {
 	
