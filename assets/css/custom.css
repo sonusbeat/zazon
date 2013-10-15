@@ -16,11 +16,8 @@
 	margin: 0;
 	padding: 32px 0;
 }
-.address-body {
-	
-}
 .map {
-	border: solid royalblue 2px;
+	border: solid #428bca 2px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
