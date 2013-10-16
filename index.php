@@ -9,11 +9,11 @@
 		<link href="favicon.ico" rel="shortcut icon">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.js"></script>
-    <![endif]-->
+		<!--later than IE 9 -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/html5shiv.js"></script>
+	      <script src="assets/js/respond.js"></script>
+	    <![endif]-->
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="assets/css/custom.css">
 	</head>
@@ -29,7 +29,7 @@
 							</hgroup>
 						</center>
 						
-						<p class="lead">Este sitio se encuentra actualmente en construcción, sin embargo pronto estará dispoible para todos nuestros clientes y al público en general.</p>						
+						<p class="lead">Este sitio se encuentra actualmente en construcción, sin embargo pronto estará dispoible para todos nuestros clientes y al público en general.</p>			
 
 						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo">
 
@@ -49,12 +49,7 @@
 						  </div>
 						</div>
 
-						<div class="restaurant-location">
-								<iframe class="map" width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=zazon+cocina+internacional+zapopan&amp;aq=&amp;sll=20.546345,-108.142156&amp;sspn=6.477963,9.162598&amp;ie=UTF8&amp;hq=zazon+cocina+internacional&amp;hnear=Zapopan,+Jalisco&amp;t=m&amp;cid=7328575437792980621&amp;ll=20.664831,-103.437266&amp;spn=0.016062,0.021415&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br />
-
-								<small><a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es-419&amp;geocode=&amp;q=zazon+cocina+internacional+zapopan&amp;aq=&amp;sll=20.546345,-108.142156&amp;sspn=6.477963,9.162598&amp;ie=UTF8&amp;hq=zazon+cocina+internacional&amp;hnear=Zapopan,+Jalisco&amp;t=m&amp;cid=7328575437792980621&amp;ll=20.664831,-103.437266&amp;spn=0.016062,0.021415&amp;z=15&amp;iwloc=A" class="btn btn-primary btn-lg btn-block" target="_blank">Ver mapa más grande</a></small>								
-							<br/>
-						</div>
+						<?php include "components/map.html"; ?>
 
 						<footer><center>&copy;zazon 2013</center></footer>
 					</article>
