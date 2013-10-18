@@ -16,6 +16,8 @@
 	    <![endif]-->
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="assets/css/custom.css">
+		<!-- Estadisticas de Google Analytics -->
+		<?php include_once "components/analytics.html"; ?>
 	</head>
 	<body>
 		<div class="container">
