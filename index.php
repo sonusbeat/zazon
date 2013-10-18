@@ -25,10 +25,10 @@
 				<div class="content">
 					<article>
 						<center>
-								<h1>Zazón - Restaurant Bar</h1>
+							<h1>Zazón - Restaurant Bar</h1>
 						</center>
 						
-						<p class="lead">Este sitio se encuentra actualmente en construcción, sin embargo pronto estará dispoible para todos nuestros clientes y al público en general.</p>			
+						<p class="lead">Este sitio se encuentra actualmente en construcción, asi que les pedimos un poco de su comprensión ya que muy pronto estará disponible para todos nuestros clientes y visitantes.</p>			
 
 						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo">
 
@@ -56,7 +56,7 @@
 			</section>
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="//code.jquery.com/jquery.js"></script> -->
+    	<!-- <script src="//code.jquery.com/jquery.js"></script> -->
 		<!-- Latest compiled and minified JavaScript -->
 		<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
 	</body>
