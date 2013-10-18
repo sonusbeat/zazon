@@ -25,10 +25,7 @@
 				<div class="content">
 					<article>
 						<center>
-							<hgroup>
-								<h1>Bienvenidos Zazón</h1>
-								<h2>Restaurant Bar</h2>
-							</hgroup>
+								<h1>Zazón - Restaurant Bar</h1>
 						</center>
 						
 						<p class="lead">Este sitio se encuentra actualmente en construcción, sin embargo pronto estará dispoible para todos nuestros clientes y al público en general.</p>			
