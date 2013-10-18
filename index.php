@@ -30,7 +30,7 @@
 						
 						<p class="lead">Este sitio se encuentra actualmente en construcción, asi que les pedimos un poco de su comprensión ya que muy pronto estará disponible para todos nuestros clientes y visitantes.</p>			
 
-						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo">
+						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo" title="Zazón Restaurant Bar">
 
 					  <h2 class="text-center">Plaza Alegra</h2>
 						
