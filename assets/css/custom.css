@@ -1,24 +1,36 @@
-.content {
-	margin: 0 auto;
-	width: 500px;
+body {
+	font: 16px;
 }
-.address {
-	margin: 20px 0;
-	overflow: hidden;
+/* Navbar */
+.navbar-default {
+    background-color: #6E013A;
+    border-color: #3F0121;
 }
-.address-heading {
-	float: left;
-	height: 100px;
-	margin-right: 20px;
-	width: 135px;
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #6E013A;
+    color: #FFFDFF;
 }
-.address-heading h2 {
-	margin: 0;
-	padding: 32px 0;
+.navbar-default .navbar-nav>li>a {
+	color: #FFE6B2;
+	font-weight: bold;
 }
-.map {
-	border: solid #428bca 2px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+	color: #FFFDFF;
+}
+/* Buttons */
+.btn-primary {
+    color: #FFE6B2;
+    background-color: #6E013A;
+    border-color: #3F0121;
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+    background-color: #3F0121;
+    border-color: #6E013A;
 }

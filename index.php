@@ -17,47 +17,67 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="assets/css/custom.css">
 		<!-- Estadisticas de Google Analytics -->
-		<?php include_once "components/analytics.html"; ?>
+		<?php include_once "modules/analytics.html"; ?>
 	</head>
-	<body>
+	<body class="inicio">
 		<div class="container">
 			<section>
-				<div class="content">
-					<article>
+				<article>
+					<header>
 						<center>
 							<h1>Zazón - Restaurant Bar</h1>
 						</center>
-						
-						<p class="lead">Este sitio se encuentra actualmente en construcción, asi que les pedimos un poco de su comprensión ya que muy pronto estará disponible para todos nuestros clientes y visitantes.</p>			
-
-						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo" title="Zazón Restaurant Bar">
-
-					  <h2 class="text-center">Plaza Alegra</h2>
-						
-						<div class="address">
-						  <div class="address-heading">
-						    <h3>Visitanos</h3>
-						  </div>
-						  <div class="address-body">
-						    <address>
-								  <b>Direccion:</b> Avenida Guadalupe No. 6000 Local 31<br>
-								  <b>Colonia:</b> Plaza Guadalupe<br>
-								  <b>Tel:</b> (33) 12-04-98-06<br>
-								  <b>Ciudad:</b> Zapopan, Jalisco, México<br>
-								</address>
-						  </div>
+					</header>
+					<nav>
+						<?php include('modules/navbar.html'); ?>
+					</nav>
+					<section>
+						<div class="row">
+							<div class="col-lg-8 content">
+								<article>
+									<p class="lead">Este sitio se encuentra actualmente en construcción, asi que les pedimos un poco de su comprensión ya que muy pronto estará disponible para todos nuestros clientes y visitantes.</p>			
+									<center>
+										<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo" title="Zazón Restaurant Bar Logo">
+									</center>
+								</article>
+							</div><!-- content -->
+							<div class="col-lg-4">
+								<aside>
+																		
+								</aside>
+							</div>
+						</div><!-- row -->	
+					</section>
+					<footer>
+						<div class="row">
+							<div class="col-lg-4">
+								<?php include("modules/address.html"); ?>
+							</div>
+							<div class="col-lg-4">
+								<?php include('modules/social-networks.html'); ?>
+							</div>
+							<div class="col-lg-4">
+								<?php include("modules/map.html"); ?>
+							</div>
 						</div>
-
-						<?php include "components/map.html"; ?>
-
-						<footer><center>&copy;zazon 2013</center></footer>
-					</article>
-				</div>
+						<center>&copy; zazon 2013</center>
+					</footer>
+				</article>
 			</section>
 		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<!-- <script src="//code.jquery.com/jquery.js"></script> -->
+  	<script src="//code.jquery.com/jquery.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
-		<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function() {
+      	$('a.menu-link').tooltip( 
+      		{ 
+      			"delay": { "show": 100, "hide": 250 },
+      			"placement": "bottom"
+      		}
+    		);
+      });
+		</script>
 	</body>
 </html>
