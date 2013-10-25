@@ -28,7 +28,7 @@
 							<h1>Zazón - Restaurant Bar</h1>
 						</center>
 						
-						<p class="lead">Este sitio se encuentra actualmente en construcción, asi que les pedimos un poco de su comprensión ya que muy pronto estará disponible para todos nuestros clientes y visitantes.</p>			
+						<p class="lead">Este sitio web se encuentra actualmente en construcción, sin embargo los invitamos a que nos visiten para que disfruten de nuestro delicioso buffet menú de 8 a.m a 1 p.m y de nuestro menú de 1 p.m a las 12 de la noche.</p>
 
 						<img class="img-responsive" src="assets/img/zazon-logo.jpg" alt="Zazón Logo" title="Zazón Restaurant Bar">
 
