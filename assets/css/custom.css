@@ -1,10 +1,32 @@
 body {
 	font: 16px;
 }
+/*Header*/
+header.top {
+    background: url('../img/header-background.jpg');
+    height: 170px;
+}
+header.top .logo {
+    height: 150px;
+    left: 30px;
+    position: relative;
+    top: 10px;
+    width: 150px;
+}
+header.top h1 {
+    margin: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: -9999px;
+}
 /* Navbar */
+.navbar {
+    margin-bottom: 0;
+}
 .navbar-default {
     background-color: #6E013A;
     border-color: #3F0121;
+    border-radius: 0;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -19,6 +41,42 @@ body {
 .navbar-default .navbar-nav>li>a:hover, 
 .navbar-default .navbar-nav>li>a:focus {
 	color: #FFFDFF;
+}
+/* Banner */
+.banner {
+    background: url('../img/homepage-background.jpg');
+}
+.banner .myCarousel {
+    height: 300px;
+    margin: 0 auto;
+    width: 600px;
+}
+/* Content */
+.content {
+    background: url('../img/main-body-background.jpg');
+}
+.content .anuncio, 
+.content .sidebar {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2em 0;
+    min-height: 600px;
+    padding: 2em;
+}
+.content .sidebar h2:first-child {
+    margin-top: 0;
+}
+/* Footer */
+.footer {
+    background: url('../img/footer-background.jpg');
+    color: #fff;
+}
+.footer h2 {
+    color: #ffe6b2;
+    font-size: 1.75em;
+}
+.footer h3 {
+    color: #ddd;
 }
 /* Buttons */
 .btn-primary {
