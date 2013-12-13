@@ -1,0 +1,97 @@
+<script type="text/javascript">
+	function loadCufon(){
+		Cufon.replace('.menu > ul > li', { hover: true, hoverables: { li: true }, ignore: { ul: true } } );
+		Cufon.replace('.sexyslider-title a', { textShadow: '#000 0 1px', hover: 'true' } );
+		Cufon.replace('.homepage-columns-item .title', { textShadow: '#47250f 0 1px' } );
+		Cufon.replace('.main-title span', { textShadow: '#560000 0 1px' } );
+		Cufon.replace('.menu-card-title', { textShadow: '#560000 0 1px' } );
+		Cufon.replace('.show-all', { textShadow: '#fff 0 1px', hover: 'true' } );
+		Cufon.replace('.price', { textShadow: '#a11b00 0 1px' } );
+		Cufon.replace('.menu-price', { hover: 'true' } );
+		Cufon.replace('h2, h3, h4, h5, h6', { hover: 'true' } );
+		Cufon.replace('.date', { hover: 'true' } );
+		Cufon.replace('.pages a', { hover: 'true' } );
+		Cufon.replace('.news-title a', { textShadow: '#fff 0 1px', hover: 'true' } );
+		Cufon.replace('.menu-card .item .title a', { hover: 'true' } );
+	}
+</script>
+<script src="js/orange-themes-responsive.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#homepage-slider").SexySlider({
+			width      : 950,
+			height     : 350,
+			delay      : 5000,
+			strips     : 10,
+			autopause  : true,
+			navigation : '#navigation',
+			control    : '#control',
+			effect     : 'fade',
+			titleStyle : 'false'
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		// hide #back-top first
+		// $("#back-top").hide();
+		
+		// fade in #back-top
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.back-top').fadeIn();
+				} else {
+					$('.back-top').fadeOut();
+				}
+			});
+
+			// scroll body to 0px on click
+			$('.back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+			
+			jQuery(".menu-primary-wrapper").wrap("<div class='menu-set'></div>");
+			jQuery(".menu-set").append("<a href='#show-menu' class='mobile-menu'></a>");
+			jQuery("a[href='#show-menu']").click(function (){
+				jQuery(".menu-set").toggleClass("menu-active");
+				return false;
+			});
+		});
+
+	});
+</script>
+
+<script type="text/javascript">
+	function randomiseDiv()
+		{
+			// Define how many divs we have
+			var divCount = 3;
+
+			// Get our random ID (based on the total above)
+			var randomId = Math.floor(Math.random()*divCount+1);
+
+			// Get the div that's been randomly selectted
+			var chosenDiv = document.getElementById('feedback-' + randomId);
+
+			// If the content is available on the page
+			if (chosenDiv)
+			{
+				// Update the display
+				chosenDiv.style.display = 'block';
+			}
+		}
+	window.onload = randomiseDiv;
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a.tTip').tinyTips('title');
+	});
+</script>

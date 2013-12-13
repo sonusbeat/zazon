@@ -1,0 +1,104 @@
+/* LayerSlider Light Skin */
+
+
+
+.ls-lightskin { }
+
+.ls-lightskin .ls-bottom-nav-wrapper {
+	position: relative;
+}
+
+
+.ls-lightskin .ls-nav-prev { width: 25px; height: 229px; margin: -284px 0 0 -26px; padding: 0; text-indent: -5000px; background: url(btn-previous-1.png) 0 0 no-repeat; position: absolute; }
+
+.ls-lightskin .ls-nav-prev:hover {
+	background-position: -25px 0;
+}
+
+.ls-lightskin .ls-nav-prev:active {
+	background-position: -50px 0;
+}
+
+.ls-lightskin .ls-nav-next {
+width: 25px; height: 229px; margin: -284px 0 0 951px; padding: 0; text-indent: -5000px; background: url(btn-next-1.png) 0 0 no-repeat; position: absolute;
+}
+
+.ls-lightskin .ls-nav-next:hover {
+	background-position: -25px 0;
+}
+
+.ls-lightskin .ls-nav-next:active {
+	background-position: -50px 0;
+}
+
+.ls-lightskin .ls-nav-start {
+	background-position: -300px 0px;
+}
+
+.ls-lightskin .ls-nav-start:hover {
+	background-position: -300px -75px;
+}
+
+.ls-lightskin .ls-nav-stop {
+	background-position: -450px 0px;
+}
+
+.ls-lightskin .ls-nav-stop:hover {
+	background-position: -450px -75px;
+}
+
+.ls-lightskin .ls-bottom-slidebuttons { width: 159px; height: 32px; padding: 7px 0 0 55px; margin: -14px 0 0 311px; position: absolute; background: url(homepage-slider-control-bg.png) 0 0 no-repeat; z-index: 30; }
+
+.ls-lightskin .ls-bottom-slidebuttons a {
+	background-position: 0px -150px;
+}
+
+.ls-lightskin .ls-bottom-slidebuttons a.ls-nav-active {
+	background-position: 0 -28px;
+}
+
+.ls-lightskin .ls-nav-sideleft {
+	background-position: -150px -150px;	
+}
+
+.ls-lightskin .ls-nav-sideright {
+	background-position: -225px -150px;	
+}
+
+
+.ls-lightskin .ls-bottom-slidebuttons,
+.ls-lightskin .ls-bottom-slidebuttons a,
+.ls-lightskin .ls-nav-start,
+.ls-lightskin .ls-nav-stop,
+.ls-lightskin .ls-bottom-nav-wrapper,
+.ls-lightskin .ls-nav-sides {
+	height: 28px;
+}
+
+.ls-lightskin .ls-bottom-slidebuttons,
+.ls-lightskin .ls-bottom-slidebuttons a,
+.ls-lightskin .ls-nav-start,
+.ls-lightskin .ls-nav-stop,
+.ls-lightskin .ls-nav-sides {
+	display: inline-block;
+}
+
+.ls-lightskin .ls-nav-start,
+.ls-lightskin .ls-nav-stop {
+	width: 54px;
+}
+
+.ls-lightskin .ls-bottom-slidebuttons a {
+	width: 18px;
+}
+
+.ls-lightskin .ls-nav-sides {
+	width: 44px;
+}
+
+
+
+
+.ls-lightskin .ls-bottom-slidebuttons a { width: 14px; height: 14px; margin: 0 4px; text-indent: -5000px; background: url(homepage-slider-control-item-ico.png) 0 0 no-repeat; text-decoration: none; float: left; }
+
+.ls-lightskin .ls-bottom-slidebuttons a:hover { background-position: 0 -14px; }
