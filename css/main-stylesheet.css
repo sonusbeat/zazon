@@ -778,7 +778,7 @@ blockquote { padding: 8px 0 0 32px; margin: 0 0 21px 40px; font-size: 15px; line
 
 .menu-card .item { margin: 0 0 20px 0; }
 
-.menu-card .item td { vertical-align: top; }
+.menu-card .item td { vertical-align: middle; }
 
 .menu-card .item .image { padding: 0 20px 0 0; }
 
@@ -810,7 +810,7 @@ blockquote { padding: 8px 0 0 32px; margin: 0 0 21px 40px; font-size: 15px; line
 
 .menu-card .navigation .next:active { background-position: -50px 0; }
 
-.menu-card-title { width: 415px; height: 37px; padding: 16px 0 0 0; margin: 0 0 30px 0; font-size: 19px; font-weight: bold; color: #fff; text-align: center; background: url(../images/menu-card-title-bg.png) 0 0 no-repeat; }
+.menu-card-title { width: 415px; height: 37px; padding: 16px 0 0 0; margin: 0 0 30px 0; font-size: 17px; font-weight: bold; color: #fff; text-align: center; background: url(../images/menu-card-title-bg.png) 0 0 no-repeat; }
 
 .menu-card-link { width: 415px; height: 37px; padding: 16px 0 0 0; margin: 0 0 30px 0; font-size: 11px; font-weight: bold; color: #76452f; text-align: right; text-shadow: #f5f5f5 0 1px 0; }
 
