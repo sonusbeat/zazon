@@ -6,7 +6,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<!-- SEO -->
-		<meta name="robots" content="index, follow">
+		<meta name="robots" description="noindex, nofollow">
 		<meta name="description" content="Restaurant Bar de Cocina Internacional en Zapopan, Jalisco, México">
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
