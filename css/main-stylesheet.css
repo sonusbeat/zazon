@@ -786,9 +786,10 @@ blockquote { padding: 8px 0 0 32px; margin: 0 0 21px 40px; font-size: 15px; line
 
 .menu-card .item .image img { padding: 0 0 6px 0; background: url(../images/image-shadow-7.png) bottom center no-repeat; display: block; }
 
-.menu-card .item .title { margin: -4px 0 8px 0; font-size: 13px; background: url(../images/line-h-dotted-1.png) 0 13px no-repeat; }
+.menu-card .item .title { background: url(../images/line-h-dotted-1.png) 0 13px no-repeat; font-size: 13px; margin: -4px 0 8px 0; }
 
-.menu-card .item .title a { padding: 0 10px 0 0; text-decoration: none; color: #76452f; font-weight: bold; background-color: #fff; }
+
+.menu-card .item .title a { background-color: #fff; padding: 0 10px 0 0; text-decoration: none; color: #76452f; font-weight: bold; }
 
 .menu-card .item .title a:hover { color: #a65600; }
 
