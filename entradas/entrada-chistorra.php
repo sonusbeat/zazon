@@ -50,7 +50,7 @@
 											<div class="full-width-content">
 												<div class="main-title">
 													<span><b>Entradas</b></span>
-													<a href="/galeria-imagenes-platillos.php" title="Ver todas las imagenes">mostrar todas las imagenes</a>
+													<!-- <a href="/galeria-imagenes-platillos.php" title="Ver todas las imagenes">mostrar todas las imagenes</a> -->
 												</div>
 												<div class="photo-gallery-open">
 													<h3>Chistorra</h3>
