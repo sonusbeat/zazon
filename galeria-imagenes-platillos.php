@@ -45,7 +45,6 @@
 				Cufon.replace('.pages a', { hover: 'true' } );
 				Cufon.replace('.news-title a', { textShadow: '#fff 0 1px', hover: 'true' } );
 				Cufon.replace('blockquote', { hover: 'true' } );
-				Cufon.replace('.photo-gallery-open .nr', { hover: 'true' } );
 			}
 		</script>
 		<script src="js/orange-themes-responsive.js" type="text/javascript"></script>
@@ -484,13 +483,13 @@
 				<!-- BEGIN .content -->
 				<div class="content">
 
-					<!-- BEGIN .full-width-wrapper -->
-					<div class="full-width-wrapper">
+					<!-- BEGIN .homepage-wrapper -->
+					<div class="homepage-wrapper">
 
 						<table>
 							<tr>
 							
-								<td class="full-width-content-wrapper">
+								<td class="main-content-wrapper">
 								
 									<div class="top"></div>
 								
@@ -499,68 +498,214 @@
 										<div class="content">
 											
 											
-											<!-- BEGIN .full-width-content -->
-											<div class="full-width-content">
+											<!-- BEGIN .left-side -->
+											<div class="left-side">
 											
 												<div class="main-title">
 													<span><b>Photo gallery</b></span>
-													<a href="#">show all Photo galleries</a>
+													<a href="#">back to Homepage</a>
 												</div>
 												
-												<div class="photo-gallery-open">
-													
-													<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-													
-													<table class="navigation">
-														<tr>
-															<td><a href="#" class="previous">&nbsp;</a></td>
-															<td class="nr">1 of 6</td>
-															<td><a href="#" class="next">&nbsp;</a></td>
-														</tr>
-													</table>
-													
-													<a href="#"><img src="images/image-129.jpg" alt="" class="image" /></a>
-													
-													<table class="navigation">
-														<tr>
-															<td><a href="#" class="previous">&nbsp;</a></td>
-															<td class="nr">1 of 6</td>
-															<td><a href="#" class="next">&nbsp;</a></td>
-														</tr>
-													</table>
-													
-													<div class="description">
-														Morbi accumsan ultricies tincidunt. Aliquam eget eros ac velit placerat pulvinar at et elit. Phasellus tempor est in risus venenatis a blandit urna commodo. Aliquam feugiat porta urna in facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-													</div>
-													
-													<div class="thumbnails">
-														<a href="#"><img src="images/image-130.jpg" alt="" width="110" height="110" /></a>
-														<a href="#"><img src="images/image-131.jpg" alt="" width="110" height="110" /></a>
-														<a href="#"><img src="images/image-132.jpg" alt="" width="110" height="110" /></a>
-														<a href="#"><img src="images/image-133.jpg" alt="" width="110" height="110" /></a>
-													</div>
 												
-												</div>
+												<!-- BEGIN .photo-gallery -->
+												<div class="photo-gallery">
+												
+													<!-- BEGIN .index-list -->
+													<div class="index-list">
+													
+														<!-- BEGIN .row -->
+														<div class="row">
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-105.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Aliquam facilisis, ipsum id condimentum ornare, metus arcu congue lacus.</a>
+															<!-- END .index-item -->
+															</div>
 
-											<!-- END .full-width-content -->
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-106.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Maecenas vitae nibh eu lacus porta feugiat et in lectus. Class aptent taciti.</a>
+															<!-- END .index-item -->
+															</div>
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-107.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Donec semper, nisl sit amet rutrum lacinia, sem leo consequat leo, vel.</a>
+															<!-- END .index-item -->
+															</div>
+
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-108.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Phasellus ut elementum tortor. Mauris pellentesque posuere erat. Aliquams.</a>
+															<!-- END .index-item -->
+															</div>
+														
+														<!-- END .row -->
+														</div>
+														
+														<!-- BEGIN .row -->
+														<div class="row">
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-109.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Pellentesque volutpat urna et est accumsan non egestas augue dignissim.</a>
+															<!-- END .index-item -->
+															</div>
+
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-110.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Etiam ultricies lobortis dolor, a accumsan elit tristique. Duis aliquam.</a>
+															<!-- END .index-item -->
+															</div>
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-111.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Class aptent taciti sociosqu ad litora torquent perbia nostra polit.</a>
+															<!-- END .index-item -->
+															</div>
+
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-112.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Nullam faucibus leo euismod nibh scelerisque condimentum nec in tortor.</a>
+															<!-- END .index-item -->
+															</div>
+														
+														<!-- END .row -->
+														</div>
+														
+														<!-- BEGIN .row -->
+														<div class="row">
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-105.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Aliquam facilisis, ipsum id condimentum ornare, metus arcu congue lacus.</a>
+															<!-- END .index-item -->
+															</div>
+
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-106.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Maecenas vitae nibh eu lacus porta feugiat et in lectus. Class aptent taciti.</a>
+															<!-- END .index-item -->
+															</div>
+															
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-107.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Donec semper, nisl sit amet rutrum lacinia, sem leo consequat leo, vel.</a>
+															<!-- END .index-item -->
+															</div>
+
+															<!-- BEGIN .index-item -->
+															<div class="index-item">
+																<a href="#"><img src="images/image-108.jpg" alt="" width="135" height="135" /></a>
+																<a href="#">Phasellus ut elementum tortor. Mauris pellentesque posuere erat. Aliquams.</a>
+															<!-- END .index-item -->
+															</div>
+														
+														<!-- END .row -->
+														</div>
+														
+														<!-- BEGIN .pages -->
+														<div class="pages">
+														
+															<table>
+																<tr>
+																	<td>
+																		<a href="#" class="previous"><span>Previous</span></a>
+																		<a href="#"><span>1</span></a>
+																		<a href="#" class="active"><span>2</span></a>
+																		<a href="#"><span>3</span></a>
+																		<a href="#"><span>4</span></a>
+																		<a href="#"><span>5</span></a>
+																		<a href="#" class="next"><span>Next</span></a>
+																	</td>
+																</tr>
+															</table>
+														
+														<!-- END .pages -->
+														</div>
+													
+													<!-- END .index-list -->
+													</div>
+												
+												<!-- END .photo-gallery -->
+												</div>
+												
+
+												<div class="clear"></div>
+												
+												
+												<p class="show-all last"><a href="#"><span>Back to Homepage</span></a></p>
+												
+
+											<!-- END .left-side -->
 											</div>
-
 											
+											
+											<!-- BEGIN .right-side -->
+											<div class="right-side">
+											
+												<!-- BEGIN .sidebar-block-1 -->
+												<div class="sidebar-block-1">
+													
+													<div class="title"><h3>Popular galleries</h3></div>
+													
+													<!-- BEGIN .popular-galleries -->
+													<div class="popular-galleries">
+													
+														<a href="#"><img src="images/image-117.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-118.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-119.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-120.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-121.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-122.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-123.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-124.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-120.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-117.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-118.jpg" alt="" width="51" height="51" /></a>
+														<a href="#"><img src="images/image-119.jpg" alt="" width="51" height="51" /></a>
+														
+													<!-- END .popular-galleries -->
+													</div>
+													
+												</div>
+												<!-- END .sidebar-block-1 -->
+												
+												
+											<!-- END .right-side -->
+											</div>
+											
+											
+											<div class="clear"></div>
+											
+
 										</div>
 										
 									</div>
 									
 								</td>
+								<!-- END .homepage-about -->
 
 							</tr>
 							
 							<tr>
-								<td class="full-width-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>go back to the top</span></a></p></td>
+								<td class="main-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>go back to the top</span></a></p></td>
 							</tr>
 							
 						</table>
 
-					<!-- END .full-width-wrapper -->
+					<!-- END .homepage-wrapper -->
 					</div>
 
 

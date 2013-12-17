@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 	<head>
-		<title>Zazón - Restaurant Bar</title>
+		<title>Zazón - Menu de Platillos y Bebidas</title>
 		<!-- Meta Tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<!-- SEO -->
 		<meta name="robots" content="index, follow">
-		<meta name="description" content="Restaurant Bar de Cocina Internacional en Zapopan, Jalisco, México">
+		<meta name="description" content="Restaurant Bar de Cocina Internacional Menu de Platillos y Bebidas">
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<!-- Stylesheets -->
