@@ -29,7 +29,7 @@
 			<div class="main-header-wrapper">
 				<header>
 					<div class="header">
-						<?php #include('_components/feedback.html'); ?>						
+						<?php #include('_components/feedback.html'); ?>
 						<?php include('_components/logo-zazon.html'); ?>
 					</div><!-- END .header -->
 				</header>
