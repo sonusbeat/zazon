@@ -1,4 +1,4 @@
-<?php include('/includes/platillos_array.php'); ?>
+<?php include('includes/platillos_array.php'); ?>
 <?php
 
 if(isset($_GET['platillo']) && $_GET['platillo'] !== '' && array_key_exists($_GET['platillo'], $platillos)) :
