@@ -49,6 +49,16 @@ $platillos = array(
 		"titulo" => "Carpacho de Alcachofa",
 		"img" => "carpaccio-alcachofa.jpg",
 		"des" => ""
+	),
+	"crema-chile-poblano" => array(
+		"titulo" => "Crema de Chile Poblano",
+		"img" => "crema-chile-poblano.jpg",
+		"des" => ""
+	),
+	"sopa-lima" => array(
+		"titulo" => "Sopa de Lima",
+		"img" => "sopa-lima.jpg",
+		"des" => ""
 	)
 );
 ?>
