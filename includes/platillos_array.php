@@ -24,6 +24,31 @@ $platillos = array(
 		"titulo" => "Entrada Tacos de Camarón al Pastor",
 		"img" => "entrada-tacos-camaron-pastor.jpg",
 		"des" => ""
+	),
+	"ensalada-mozzarella" => array(
+		"titulo" => "Ensalada Mozzarella",
+		"img" => "ensalada-motzarella.jpg",
+		"des" => ""
+	),
+	"carpaccio-pulpo" => array(
+		"titulo" => "Carpacho de Pulpo",
+		"img" => "carpaccio-pulpo.jpg",
+		"des" => ""
+	),
+	"carpaccio-salmon" => array(
+		"titulo" => "Carpacho de Salmón",
+		"img" => "carpaccio-salmon.jpg",
+		"des" => ""
+	),
+	"carpaccio-pescado" => array(
+		"titulo" => "Carpacho de Pescado",
+		"img" => "carpaccio-pescado.jpg",
+		"des" => ""
+	),
+	"carpaccio-alcachofa" => array(
+		"titulo" => "Carpacho de Alcachofa",
+		"img" => "carpaccio-alcachofa.jpg",
+		"des" => ""
 	)
 );
 ?>
