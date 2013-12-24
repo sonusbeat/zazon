@@ -59,6 +59,21 @@ $platillos = array(
 		"titulo" => "Sopa de Lima",
 		"img" => "sopa-lima.jpg",
 		"des" => ""
+	),
+	"pasta-ignoquis-camarones" => array(
+		"titulo" => "Iñoquis con Camarones a los 4 Quesos",
+		"img" => "pasta-ignoquis-camarones.jpg",
+		"des" => "Pasta a base de papa y harina, camarones sartenados, champiñones, espinacas, salsa cremosa, queso parmesano, manchego, queso azúl y mozzarella."
+	),
+	"pasta-lasagna-verde" => array(
+		"titulo" => "Lasaña Verde",
+		"img" => "pasta-lasagna-verde.jpg",
+		"des" => "De carne bañada en salsa cremosa con espinacas."
+	),
+	"pasta-fetuccini-al-pesto-pollo" => array(
+		"titulo" => "Fetuccini al Pesto con Pollo",
+		"img" => "pasta-fetuccini-al-pesto-pollo.jpg",
+		"des" => "Pasta fetuccini, salsa al pesto, tomate deshidratado, espinacas, pollo a la parrilla y queso parmesano."
 	)
 );
 ?>
