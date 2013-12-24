@@ -119,6 +119,46 @@ $platillos = array(
 		"titulo" => "Vacio Florentino",
 		"img" => "carne-vacio-florentino.jpg",
 		"des" => "450 gr con espinacas a la crema, migas de panco al romero acompañado de papas cambray."
-	)	
+	),
+	"pollo-arroz-peruano" => array(
+		"titulo" => "Arroz Peruano",
+		"img" => "pollo-arroz-peruano.jpg",
+		"des" => "Arroz frito con camarones y ají amarillo con pechuga de pollo."
+	),
+	"pollo-crispy-chicken" => array(
+		"titulo" => "Crispy Chicken",
+		"img" => "pollo-crispy-chicken.jpg",
+		"des" => "Pollo sin hueso, con piel, puré de papa, espárragos y salsa obscura de pollo."
+	),
+	"ceviche-peruano" => array(
+		"titulo" => "Ceviche Peruano",
+		"img" => "ceviche-peruano.jpg",
+		"des" => "Pescado blanco, ají amarillo, roccoto, elote, cebolla morada, cilantro, pimiento morrón rojo, acompañado con una media luna de camote."
+	),
+	"ceviche-chile-arbol" => array(
+		"titulo" => "Ceviche Chile al de Arbol",
+		"img" => "ceviche-chile-arbol.jpg",
+		"des" => "Pescado blanco, cebolla morada, aguacate, cilantro, pepino y chile de árbol."
+	),
+	"ceviche-pulpo" => array(
+		"titulo" => "Ceviche de Pulpo",
+		"img" => "ceviche-pulpo.jpg",
+		"des" => "Cebolla morada, aguacate, cilantro y crocantes de cebolla frita."
+	),
+	"ceviche-verde" => array(
+		"titulo" => "Ceviche Verde",
+		"img" => "ceviche-verde.jpg",
+		"des" => "Pescado blanco, tomatillo verde, chile serrano, albahaca y cilantro."
+	),
+	"ceviche-acapulco" => array(
+		"titulo" => "Ceviche Acapulco",
+		"img" => "ceviche-acapulco.jpg",
+		"des" => "Pescado blanco, salsa cátsup, cebolla, cilantro, jitomate, aguacate, aceitunas verdes y chile jalapeño."
+	),
+	"ceviche-tiritas-ixtapa" => array(
+		"titulo" => "Ceviche Tiritas Ixtapa",
+		"img" => "ceviche-tiritas-ixtapa.jpg",
+		"des" => "Tiritas de pescado, cebolla, cebolla, chile serrano y aguacate."
+	)
 );
 ?>
