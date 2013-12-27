@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="css/sexy-slider.css" />
-		<link rel="stylesheet" href="css/main-stylesheet.css" />
+		<link rel="stylesheet" href="css/main-stylesheet-min.css" />
 		<link id="style-responsive" rel="stylesheet" media="screen" href="css/responsive/desktop.css" />
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="css/ie7.css" type="text/css" />

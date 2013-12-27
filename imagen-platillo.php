@@ -1,4 +1,4 @@
-<?php include('includes/platillos_array.php'); ?>
+<?php include('includes/platillos_array-min.php'); ?>
 <?php
 
 if(isset($_GET['platillo']) && $_GET['platillo'] !== '' && array_key_exists($_GET['platillo'], $platillos)) :
@@ -6,6 +6,7 @@ if(isset($_GET['platillo']) && $_GET['platillo'] !== '' && array_key_exists($_GE
 	$titulo_platillo = $platillos[$_GET['platillo']]['titulo'];
 	$imagen_platillo = $platillos[$_GET['platillo']]['img'];
 	$descripcion_platillo = $platillos[$_GET['platillo']]['des'];
+	$back_link = $platillos[$_GET['platillo']]['back-link'];
 
 else :
 	header('location: /');
@@ -25,7 +26,7 @@ endif;
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="css/sexy-slider.css" type="text/css" />
 		<link rel="stylesheet" href="css/content-slider.css" type="text/css" />
-		<link rel="stylesheet" href="css/main-stylesheet.css" type="text/css" />
+		<link rel="stylesheet" href="css/main-stylesheet-min.css" type="text/css" />
 		<link type="text/css" id="style-responsive" rel="stylesheet" media="screen" href="css/responsive/desktop.css" />
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="css/ie7.css" type="text/css" type="text/css" />
@@ -73,7 +74,7 @@ endif;
 														<?php echo $descripcion_platillo; ?>
 													</div>
 													<?php endif; ?>
-													<a href="menu-completo.php" class="btn-1 btn-1-color-blue btn-1-align-left"title=""><span>&lt;&lt; Volver al Menu</span></a>
+													<a href="<?php echo $back_link; ?>" class="btn-1 btn-1-color-blue btn-1-align-left" title="Volver al Menú Anterior"><span>&lt;&lt; Volver al Menu</span></a>
 													<!-- <a href="#" class="btn-1 btn-1-color-blue btn-1-align-right"><span>Galeria de Imagenes &gt;&gt;</span></a> -->
 													<div class="clear"></div>
 												</div><!-- END .photo-gallery-open -->
