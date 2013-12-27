@@ -194,6 +194,21 @@ $platillos = array(
 		"titulo" => "Salmón Zazón",
 		"img" => "salmon-zazon.jpg",
 		"des" => "Constra de nuez sobre ragú de vegetales y salsa de mago."
+	),
+	"camarones-momia" => array(
+		"titulo" => "Camarones Momia",
+		"img" => "camarones-momia.jpg",
+		"des" => "Envueltos en tocino y queso manchego sobre rodaja de piña asada, con salsa de ciruela al chipotle, acompañados de ensalada arroz jazmín al vapor."
+	),
+	"chiles-rellenos-camaron" => array(
+		"titulo" => "Chile Relleno de Camarones",
+		"img" => "chiles-rellenos-camaron.jpg",
+		"des" => "Con salsa de chile guajillo, acompañado de arroz al vapor y ensalada."
+	),
+	"camarones-zarandeados" => array(
+		"titulo" => "Camarones Zarandeados",
+		"img" => "camarones-zarandeados.jpg",
+		"des" => "Adobados con adobo de la casa, rodajas de morrones y cebollas asadas, acompañados de arroz al vapor y ensalada."
 	)
 );
 ?>
