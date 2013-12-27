@@ -209,6 +209,21 @@ $platillos = array(
 		"titulo" => "Camarones Zarandeados",
 		"img" => "camarones-zarandeados.jpg",
 		"des" => "Adobados con adobo de la casa, rodajas de morrones y cebollas asadas, acompañados de arroz al vapor y ensalada."
+	),
+	"atun-tropical" => array(
+		"titulo" => "Atún Tropical",
+		"img" => "atun-tropical.jpg",
+		"des" => "Bañado con salsa de frutos rojos y un ralish de frutas de la estación y un toque de chile jalapeño."
+	),
+	"atun-pastor" => array(
+		"titulo" => "Atún Pastor",
+		"img" => "atun-pastor.jpg",
+		"des" => "Adobado con salsa al pastor montado sobre rodaja de piña asada, acompañado de salsa mexicana, papa cambray y ensalada."
+	),
+	"atun-zazon" => array(
+		"titulo" => "Atún Zazón",
+		"img" => "atun-zazon.jpg",
+		"des" => "Bañado en salsa mernier a las finas hierbas, acompañado de puré de papa y espárragos."
 	)
 );
 ?>
