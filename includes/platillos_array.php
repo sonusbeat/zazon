@@ -159,6 +159,26 @@ $platillos = array(
 		"titulo" => "Ceviche Tiritas Ixtapa",
 		"img" => "ceviche-tiritas-ixtapa.jpg",
 		"des" => "Tiritas de pescado, cebolla, cebolla, chile serrano y aguacate."
+	),
+	"pescado-cajun" => array(
+		"titulo" => "Pescado Cajún",
+		"img" => "pescado-cajun.jpg",
+		"des" => "Horneado, marinado con cajún a base de chiles secos, cama de esquites y guacamole acompañado con ensalada tropical."
+	),
+	"pescado-zazon" => array(
+		"titulo" => "Pescado Zazón",
+		"img" => "pescado-zazon.jpg",
+		"des" => "Horneado, bañado con mernier (tomate desidratado y albahaca) acompañado con puré de papa, y espárragos."
+	),
+	"pescado-cucaracha" => array(
+		"titulo" => "Pescado Cucuaracha",
+		"img" => "pescado-cucaracha.jpg",
+		"des" => "Sellado con salsa de chile de árbol tostado, acompáñado con puré de papa y espárragos."
+	),
+	"pescado-zammys" => array(
+		"titulo" => "Pescado Zammy's",
+		"img" => "pescado-sammys.jpg",
+		"des" => "Horneado, bañado con salsa Sammy's, acompañado de papa y espárragos."
 	)
 );
 ?>
