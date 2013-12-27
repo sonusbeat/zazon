@@ -179,6 +179,21 @@ $platillos = array(
 		"titulo" => "Pescado Zammy's",
 		"img" => "pescado-sammys.jpg",
 		"des" => "Horneado, bañado con salsa Sammy's, acompañado de papa y espárragos."
+	),
+	"salmon-piccata" => array(
+		"titulo" => "Salmón Piccata",
+		"img" => "salmon-piccata.jpg",
+		"des" => "Salsa mernier con alcaparras, acompañado con puré de papa y espárragos."
+	),
+	"salmon-sammys" => array(
+		"titulo" => "Salmón Sammy's",
+		"img" => "salmon-sammys.jpg",
+		"des" => "Salsa Sammy's, fideos de sabanourus y vegetales."
+	),
+	"salmon-zazon" => array(
+		"titulo" => "Salmón Zazón",
+		"img" => "salmon-zazon.jpg",
+		"des" => "Constra de nuez sobre ragú de vegetales y salsa de mago."
 	)
 );
 ?>
