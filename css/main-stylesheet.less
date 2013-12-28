@@ -237,9 +237,11 @@ blockquote { padding: 8px 0 0 32px; margin: 0 0 21px 40px; font-size: 15px; line
 
 .menu-primary ul li a { font-size: 18px; font-weight: bold; height: 43px; padding: 23px 22px 0 22px; text-decoration: none; display: block; color: #fff; }
 
-.menu-primary li:hover > a { background: url(../images/menu-primary-wrapper-bg.png) 0 -75px no-repeat; color: #9c0000; }
+.menu-primary li:hover > a { 
+	color: yellow; 
+}
 
-.menu-primary li > a:hover { color: #9c0000; }
+.menu-primary li > a:hover { color: yellow; }
 
 .menu-primary ul li a span { background: url(../images/ico-bullet-1.png) right 6px no-repeat; padding: 0 26px 0 0; }
 
@@ -394,7 +396,19 @@ blockquote { padding: 8px 0 0 32px; margin: 0 0 21px 40px; font-size: 15px; line
 
 /* 6.0 Read More Link Styling */
 
-.more-link { width: 76px; height: 23px; padding: 1px 0 0 8px; font-size: 11px; font-weight: bold; color: #fff; text-decoration: none; text-shadow: #7d0000 0 1px 0; background: url(../images/more-link-bg.png) 0 0 no-repeat; display: block; }
+.more-link { 
+	background: url(../images/more-link-bg.png) 0 0 no-repeat; 
+	color: #fff; 
+	display: block; 
+	font-size: 11px; 
+	font-weight: bold; 
+	height: 23px; 
+	padding: 1px 0 0 8px; 
+	text-decoration: none; 
+	text-shadow: #7d0000 0 1px 0; 
+	width: 76px;
+	float: right;
+}
 
 .more-link:hover { background-position: 0 -24px; }
 
