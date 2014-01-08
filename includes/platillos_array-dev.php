@@ -37,25 +37,25 @@ $platillos = array(
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-pulpo" => array(
-		"titulo" => "Carpacho de Pulpo",
+		"titulo" => "Carpaccio de Pulpo",
 		"img" => "carpaccio-pulpo.jpg",
 		"des" => "",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-salmon" => array(
-		"titulo" => "Carpacho de Salmón",
+		"titulo" => "Carpaccio de Salmón",
 		"img" => "carpaccio-salmon.jpg",
 		"des" => "",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-pescado" => array(
-		"titulo" => "Carpacho de Pescado",
+		"titulo" => "Carpaccio de Pescado",
 		"img" => "carpaccio-pescado.jpg",
 		"des" => "",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-alcachofa" => array(
-		"titulo" => "Carpacho de Alcachofa",
+		"titulo" => "Carpaccio de Alcachofa",
 		"img" => "carpaccio-alcachofa.jpg",
 		"des" => "",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
