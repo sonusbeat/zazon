@@ -38,8 +38,7 @@
 			<?php include('_components/homepage-slider.html'); ?>
 			<div class="content-wrapper">
 				<div class="content">
-					<div class="homepage-wrapper">
-						<?php include('_components/front-page-columns.html'); ?>
+					<div class="homepage-wrapper">						
 						<table>
 							<tr>
 								<?php include('_components/front-page-main-saucers.html'); ?>
@@ -52,6 +51,7 @@
 								<td class="events-bottom"><p class="back-top"><a href="#top"><span>volver arriba</span></a></p></td>
 							</tr>
 						</table>
+						<?php include('_components/front-page-columns.html'); ?>
 					</div><!-- END .homepage-wrapper -->
 				</div><!-- END .content -->
 			</div><!-- END .content-wrapper -->
