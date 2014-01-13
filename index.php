@@ -51,7 +51,6 @@
 								<td class="events-bottom"><p class="back-top"><a href="#top"><span>volver arriba</span></a></p></td>
 							</tr>
 						</table>
-						<?php include('_components/front-page-columns.html'); ?>
 					</div><!-- END .homepage-wrapper -->
 				</div><!-- END .content -->
 			</div><!-- END .content-wrapper -->
