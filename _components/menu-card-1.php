@@ -11,7 +11,7 @@
 				</div><!-- END .card-container -->
 			</div><!-- END .content-wrapper -->	
 		</td><!-- END .homepage-about -->
-		<td class="navigation"><a href="/menu-pasta-carne-pollo-ceviche.php" class="next" id="card-next" title="Ir al siguiente menú">&nbsp;</a></td>
+		<td class="navigation"><a href="/menu-pastas-cortes-pollo-ceviche.php" class="next" id="card-next" title="Ir al siguiente menú">&nbsp;</a></td>
 	</tr>
 	<tr>
 		<td></td>
