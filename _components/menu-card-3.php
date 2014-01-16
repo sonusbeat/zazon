@@ -1,6 +1,6 @@
 <table class="menu-card">
 	<tr>
-		<td class="navigation"><a href="/menu-pasta-carne-pollo-ceviche.php" class="previous" id="card-prev" title="Ir al menú anterior">&nbsp;</a></td>
+		<td class="navigation"><a href="/menu-pastas-cortes-pollo-ceviche.php" class="previous" id="card-prev" title="Ir al menú anterior">&nbsp;</a></td>
 		<td class="menu-card-content-wrapper">
 			<div class="top">&nbsp;</div>
 			<div class="content-wrapper">
