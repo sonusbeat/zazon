@@ -1,75 +1,105 @@
 <?php
 $platillos = array(
 	"chistorra" => array(
-			"titulo" => "Entrada Chistorra",
+			"titulo" => "Chistorra",
 			"img" => "entrada-chistorra.jpg",
-			"des" => "",
+			"des" => "Asada y Acompañada con chiles toreados, cebolla cambray, salsa martajada y chimichurri.",
 			"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"proboleta" => array(
-		"titulo" => "Entrada Proboleta Asada",
+		"titulo" => "Proboleta Asada",
 		"img" => "entrada-proboleta-asada.jpg",
-		"des" => "",
+		"des" => "Rodajas de queso provolone asadas acompañadas de jitomate asado a las finas hiervas y aceite de oliva.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"tostadas-marlin" => array(
-		"titulo" => "Entrada Tostadas de Marlin",
+		"titulo" => "Tostadas de Marlin",
 		"img" => "entrada-tostadas-marlin.jpg",
-		"des" => "",
+		"des" => "Marlín ahumado acompañado de cebolla y habanero curtidos, aguacate y lechuga.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"tacos-pescado" => array(
-		"titulo" => "Entrada Tacos de Pescado Ensenada",
+		"titulo" => "Tacos de Pescado Ensenada",
 		"img" => "entrada-tacos-pescado-ensenada.jpg",
-		"des" => "",
+		"des" => "Julianas de pescado empanizado estilo Ensenada acompañados con salsa mexicana, aderezo chipotle y cebolla curtida.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"tacos-camaron" => array(
-		"titulo" => "Entrada Tacos de Camarón al Pastor",
+		"titulo" => "Tacos de Camarón al Pastor",
 		"img" => "entrada-tacos-camaron-pastor.jpg",
-		"des" => "",
+		"des" => "Camarón empanizado estilo Ensenada acompañados con salsa mexicana, aderezo chipotle y cebolla curtida.",
+		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
+	),
+	"ensalada-oriental" => array(
+		"titulo" => "Ensalada Oriental",
+		"img" => "ensalada-oriental.jpg",
+		"des" => "Lechuga chicoria, julianas de pimientos, champiñones y frituras de wontons bañado con vinagreta oriental a base de aceite de cacahuate.",
+		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
+	),
+	"ensalada-tropical" => array(
+		"titulo" => "Ensalada Tropical",
+		"img" => "ensalada-tropical.jpg",
+		"des" => "Lechugas mixtas, frutos rojos y vinagreta de frambuesa.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"ensalada-mozzarella" => array(
 		"titulo" => "Ensalada Mozzarella",
 		"img" => "ensalada-motzarella.jpg",
-		"des" => "",
+		"des" => "Rodajas de jitomate y queso mozzarella fresco, julianas de albahaca, ensalada verde con una reducción de balsámico y aceite de oliva. ",
+		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
+	),
+	"ensalada-cesar" => array(
+		"titulo" => "Ensalada Cesar",
+		"img" => "ensalada-cesar.jpg",
+		"des" => "Lechuga orejona, crotones, queso parmesano y adereso a base de anchoas.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-pulpo" => array(
 		"titulo" => "Carpaccio de Pulpo",
 		"img" => "carpaccio-pulpo.jpg",
-		"des" => "",
+		"des" => "Láminas de pulpo sobre rodajas de papa panadera, chimichurri y queso parmesano.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-salmon" => array(
 		"titulo" => "Carpaccio de Salmón",
 		"img" => "carpaccio-salmon.jpg",
-		"des" => "",
+		"des" => "Láminas de salmón bañadas con salsa soya, cebolla morada, chile serrano, ajo, jengibre y aceite de ajonjolí.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-pescado" => array(
-		"titulo" => "Carpaccio de Pescado",
+		"titulo" => "Carpaccio de Pescado Blanco",
 		"img" => "carpaccio-pescado.jpg",
-		"des" => "",
+		"des" => "Láminas de pescado blanco acompañado con jicama, habanero, pepino, cebolla morada, cilantro y aceite de oliva.",
+		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
+	),
+	"carpaccio-atun" => array(
+		"titulo" => "Carpaccio de Atún",
+		"img" => "carpaccio-atun.jpg",
+		"des" => "Láminas de atún bañadas con salsa soya, cebolla morada, chile serrano, ajo, jengibre y aceite de ajonjolí.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"carpaccio-alcachofa" => array(
 		"titulo" => "Carpaccio de Alcachofa",
 		"img" => "carpaccio-alcachofa.jpg",
-		"des" => "",
+		"des" => "Láminas de alcachofa salteadas con mostaza dijon, queso parmesano, reducción de balsámico y aceite de oliva.",
+		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
+	),
+	"carpaccio-res" => array(
+		"titulo" => "Carpaccio de Res",
+		"img" => "carpaccio-res.jpg",
+		"des" => "Láminas de res acompañadas de ojuelas de queso parmesano, cebolla morada, alcaparras y aceite de oliva.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"crema-chile-poblano" => array(
 		"titulo" => "Crema de Chile Poblano",
 		"img" => "crema-chile-poblano.jpg",
-		"des" => "",
+		"des" => "Sopa cremosa de chile poblano y un garnish de tocino y queso armesano.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"sopa-lima" => array(
 		"titulo" => "Sopa de Lima",
 		"img" => "sopa-lima.jpg",
-		"des" => "",
+		"des" => "Consomé de pollo, pimientos escalfados, pollo deshebrado, tortilla frita y un toque de lima.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"pasta-ignoquis-camarones" => array(
