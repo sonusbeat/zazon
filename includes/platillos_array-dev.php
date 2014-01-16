@@ -45,7 +45,7 @@ $platillos = array(
 	"ensalada-mozzarella" => array(
 		"titulo" => "Ensalada Mozzarella",
 		"img" => "ensalada-motzarella.jpg",
-		"des" => "Rodajas de jitomate y queso mozzarella fresco, julianas de albahaca, ensalada verde con una reducción de balsámico y aceite de oliva. ",
+		"des" => "Rodajas de jitomate y queso mozzarella fresco, julianas de albahaca, ensalada verde con una reducción de balsámico y aceite de oliva.",
 		"back-link" => "/menu-entradas-ensaladas-carpacios-sopas.php"
 	),
 	"ensalada-cesar" => array(
@@ -135,7 +135,7 @@ $platillos = array(
 	"corte-lomo-saltado" => array(
 		"titulo" => "Lomo Saltado",
 		"img" => "corte-lomo-saltado.jpg",
-		"des" => "tiras de filete de res, julianas de cebolla morada, julianas de jitomate, chicaros, papas, cilantro, ají amarillo, acompañado acompañado de arroz al vapor.",
+		"des" => "Tiras de filete de res, julianas de cebolla morada, julianas de jitomate, chicaros, papas, cilantro, ají amarillo, acompañado acompañado de arroz al vapor.",
 		"back-link" => "/menu-pastas-cortes-pollo-ceviche.php"
 	),
 	"corte-steak-diana" => array(
@@ -186,12 +186,24 @@ $platillos = array(
 		"des" => "Pollo sin hueso, con piel, puré de papa, espárragos y salsa obscura de pollo.",
 		"back-link" => "/menu-pastas-cortes-pollo-ceviche.php"
 	),
+	"pollo-Marsala" => array(
+		"titulo" => "Pollo Marsala",
+		"img" => "pollo-marsala.jpg",
+		"des" => "Con salsa marsala (a base de champiñones, vino marsala y mantequilla) acompañado con puré de papa, espinacas y chícharos.",
+		"back-link" => "/menu-pastas-cortes-pollo-ceviche.php"
+	),
 	"ceviche-peruano" => array(
 		"titulo" => "Ceviche Peruano",
 		"img" => "ceviche-peruano.jpg",
-		"des" => "Pescado blanco, ají amarillo, roccoto, elote, cebolla morada, cilantro, pimiento morrón rojo, acompañado con una media luna de camote.",
+		"des" => "Pescado blanco, cebolla morada, aguacate, cilantro, pepino y chile de árbol.",
 		"back-link" => "/menu-pastas-cortes-pollo-ceviche.php"
 	),
+	"ceviche-mango" => array(
+		"titulo" => "Ceviche al Mango",
+		"img" => "ceviche-chile-arbol.jpg",
+		"des" => "Pescado blanco, cebolla morada, aguacate, cilantro, pepino y chile de árbol.",
+		"back-link" => "/menu-pastas-cortes-pollo-ceviche.php"
+	),,
 	"ceviche-chile-arbol" => array(
 		"titulo" => "Ceviche Chile al de Arbol",
 		"img" => "ceviche-chile-arbol.jpg",
