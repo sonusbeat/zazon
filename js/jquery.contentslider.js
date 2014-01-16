@@ -1335,52 +1335,52 @@ $.fn.cycle.transitions.wipe = function($cont, $slides, opts) {
 /*! Configuration */
 
 $.fn.cycle.transitions.scrollLeftCustom = function($cont, $slides, opts) {
-		$cont.css('overflow','visible').width(opts.width);
-		opts.before.push(function(curr, next, opts, fwd) {
-			if (opts.rev)
-				fwd = !fwd;
-			$.fn.cycle.commonReset(curr,next,opts);
-			opts.cssBefore.left = fwd ? (next.cycleW-1) : (1-next.cycleW);
-			opts.animOut.left = fwd ? -curr.cycleW : curr.cycleW;
-		});
-		opts.cssFirst = { left: 0 };
-		opts.cssBefore= { top: 0 };
-		opts.animIn   = { left: 0 };
-		opts.animOut  = { top: 0 };
-	};
+        $cont.css('overflow','visible').width(opts.width);
+        opts.before.push(function(curr, next, opts, fwd) {
+            if (opts.rev)
+                fwd = !fwd;
+            $.fn.cycle.commonReset(curr,next,opts);
+            opts.cssBefore.left = fwd ? (next.cycleW-1) : (1-next.cycleW);
+            opts.animOut.left = fwd ? -curr.cycleW : curr.cycleW;
+        });
+        opts.cssFirst = { left: 0 };
+        opts.cssBefore= { top: 0 };
+        opts.animIn   = { left: 0 };
+        opts.animOut  = { top: 0 };
+    };
 
 
-	$(document).ready(function() {
+    $(document).ready(function() {
 
-		$('#content-slider')
-		.after('<div id="slider-control-wrapper"><div id="slider-control">') 
-		.cycle({ 
-			fx:				'scrollLeftCustom',
-			easing:			'easeInOutExpo',
-			timeout:		8000,
-			width:			900,
-			cleartype:		true,
-			cleartypeNoBg:	true,
-			pause:   		1 ,
-			pager:  	'#slider-control' 
-		});
+        $('#content-slider')
+        .after('<div id="slider-control-wrapper"><div id="slider-control">') 
+        .cycle({ 
+            fx:             'scrollLeftCustom',
+            easing:         'easeInOutExpo',
+            timeout:        10000,
+            width:          900,
+            cleartype:      true,
+            cleartypeNoBg:  true,
+            pause:          1,
+            pager:      '#slider-control' 
+        });
 
-	});
-	
-	jQuery.easing['jswing'] = jQuery.easing['swing'];
+    });
+    
+    jQuery.easing['jswing'] = jQuery.easing['swing'];
 
-	jQuery.extend( jQuery.easing,
-	{
-		easeInOutExpo: function (x, t, b, c, d) {
-			if (t==0) return b;
-			if (t==d) return b+c;
-			if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
-			return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
-		},
-		easeInCirc: function (x, t, b, c, d) {
-			return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
-		},
-		easeOutCirc: function (x, t, b, c, d) {
-			return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
-		}
-	});
+    jQuery.extend( jQuery.easing,
+    {
+        easeInOutExpo: function (x, t, b, c, d) {
+            if (t==0) return b;
+            if (t==d) return b+c;
+            if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+            return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+        },
+        easeInCirc: function (x, t, b, c, d) {
+            return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+        },
+        easeOutCirc: function (x, t, b, c, d) {
+            return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+        }
+    });

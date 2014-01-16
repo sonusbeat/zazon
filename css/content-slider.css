@@ -8,7 +8,7 @@
 
 .content-slider .item a { width: 70px; height: 70px; position: absolute; }
 
-.content-slider .price { height: 23px; padding: 1px 6px 0 6px; margin: 6px -4px 0 0; float: right; font-size: 12px; font-weight: bold; color: #fff; text-align: right; background: url(../images/price-2-bg.png) top right; position: relative; z-index: 2; }
+.content-slider .price { margin: 6px -4px 0 0; /*height: 23px; padding: 1px 6px 0 6px; float: right; font-size: 12px; font-weight: bold; color: #fff; text-align: right; background: url(../images/price-2-bg.png) top right; position: relative; z-index: 2; */}
 
 #content-slider { width: 900px; height: 77px; margin: 0 auto; }
 
