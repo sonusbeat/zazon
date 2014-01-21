@@ -37,8 +37,7 @@
 				</header>
 			</div><!-- END .main-header-wrapper -->
 			<?php include('_components/main-menu.html'); ?>
-			<?php include('_components/saucers-slider.html'); ?>
-			<div class="content-wrapper">
+			<div class="content-wrapper no-content-slider-wrapper">
 				<div class="content">
 					<div class="full-width-wrapper">
 						<table>
