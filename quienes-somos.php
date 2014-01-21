@@ -54,9 +54,11 @@
 												</div>
 												<div class="full-width">
 													<h3>ZAZÓN COMIDA INTERNACIONAL</h3>
+													<img style="float: right; margin-left: 0.25em;" src="images/zazon-restaurant-bar-logo-250x250.gif" alt="Logotipo de Zazon Restaurant Bar">
 													<p class="caps">Abrió sus puertas en el mes de Julio del año 2013 en la ciudad de Zapopan, Jalisco, forma parte del Corporativo Flores Restaurants nacidos en la ciudad de Cincinnati, Ohio, donde contamos con más de 15 años de experiencia al servicio de nuestros clientes.</p>
 													<p>Gracias a la aceptación de los paladares americanos en nuestra comida mexicana en el restaurant “EL PUEBLO” y americana en restaurant “SAMMY´S GOURMET BURGUERS &amp; BEERS” decidimos abrir nuestro primer restaurante en México en nuestra ciudad natal Guadalajara, Jalisco, con un concepto de Comida Internacional, ofreciendo una gran variedad de platillos exquisitos a nuestros comensales.</p>
 													<p>A palabras de nuestros clientes ZAZÓN COMIDA INTERNACIONAL se caracteriza por la calidez y atención en el servicio de nuestro personal acompañado de una gran cocina que desarrolla platillos que seguramente excederán las expectativas de nuestros exigentes comensales Los esperamos pronto, les garantizamos que regresarán!!!</p>
+													<div class="clear">&nbsp;</div>
 												</div><!-- END .full-width-content -->
 											</div><!-- END .full-width-content -->
 										</div><!-- END .content -->
@@ -64,7 +66,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="full-width-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>go back to the top</span></a></p></td>
+								<td class="full-width-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>Volver Arriba</span></a></p></td>
 							</tr>
 						</table>
 					</div><!-- END .full-width-wrapper -->
