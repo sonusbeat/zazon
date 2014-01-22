@@ -52,7 +52,7 @@
 													<a href="/">Volver a Inicio</a>
 												</div>
 												<div class="full-width">
-													<h3>Galeria de Imagenes</h3>
+													<h3 class="center">Galeria de Imagenes</h3>													
 													<?php include('_components/galeria-imagenes-instalaciones.php'); ?>
 												</div><!-- END .full-width-content -->
 											</div><!-- END .full-width-content -->

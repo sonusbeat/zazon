@@ -1,14 +1,14 @@
 <?php include('includes/instalaciones_array-dev.php'); ?>
 <?php
 
-// if(isset($_GET['instalacion']) && $_GET['instalacion'] !== '' && array_key_exists($_GET['instalacion'], $instalaciones)) :
+if(isset($_GET['instalacion']) && $_GET['instalacion'] !== '' && array_key_exists($_GET['instalacion'], $instalaciones)) :
 		
-	$titulo_instalacion = $instalaciones[$_GET['imagen-instalacion']]['titulo'];
-	$imagen_instalacion = $instalaciones[$_GET['imagen-instalacion']]['img'];
-	$back_link = $instalaciones[$_GET['imagen-instalacion']]['back-link'];
-// else :
-// 	header('location: /');
-// endif;
+	$titulo_instalacion = $instalaciones[$_GET['instalacion']]['titulo'];
+	$imagen_instalacion = $instalaciones[$_GET['instalacion']]['img'];
+	$back_link = $instalaciones[$_GET['instalacion']]['back-link'];
+else :
+	header('location: /');
+endif;
 
 ?>
 <!DOCTYPE html>
