@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /_components/
+Disallow: /css/
+Disallow: /images/parallax-slider/
+Disallow: /images/instalaciones/miniaturas/
+Disallow: /includes/
+Disallow: /js/
+Disallow: .gitignore
+Disallow: datepicker.html
+Disallow: error-404.php
+Disallow: github.php
+Disallow: README.md
