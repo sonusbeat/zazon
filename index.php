@@ -23,6 +23,8 @@
 		<script src="js/cufon-yui.js" type="text/javascript"></script>
 		<script src="js/museo.font.js" type="text/javascript"></script>
 		<?php include('_components/front-page-js.html'); ?>
+		<!-- Google Analytics -->
+		<?php include('includes/codigo_seguimiento_google_analytics.html'); ?>
 	</head>
 	<body class="top">
 		<div class="container">
