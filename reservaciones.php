@@ -64,7 +64,7 @@
 																	<tr>
 																		<td colspan="2">
 																			<div class="top-error-message">
-																				Hay Errores en tu Reservación
+																				Hay Errores en su Reservación
 																			</div>
 																		</td>
 																	</tr>

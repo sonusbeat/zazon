@@ -70,6 +70,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 	endif;
 
 	if(!isset($empty_from_hour_message) && !isset($empty_to_hour_message) && !isset($empty_from_meridian_message) && $to_meridian == 'am - pm'):
+		$form_error = true;
 		$empty_to_meridian_message = 'Elija am ó pm de la hora de Finalización';
 	else:
 		$empty_to_meridian_message = null;
