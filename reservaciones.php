@@ -50,152 +50,220 @@
 													<span><b>Reservaciones</b></span>
 													<a href="/">Volver al Inicio</a>
 												</div>
-												<div class="post">
+												<div class="post">													
 													
-													<div>
-														<?php var_dump($post_array); ?>	
-													</div>
-
-													<h3>Realiza tu reservación</h3>
-													<p>Selecciona la Fecha y Hora así como tu nombre completo, teléfono, email y si tienes algunas especificaciones extras escribelas en notas extras.</p>
-													<form action="reservaciones.php" method="post">
-														<div class="reservations-wrapper">
-															<table class="reservations">
-																<tr>
-																	<td colspan="2">
-																		<div class="top-error-message">
-																			Por favor llena los campos obligatorios
-																		</div>
-																</td>
-																</tr>
-																<tr>
-																	<td class="label"><label>Fecha:</label></td>
-																	<td>
-																		<p class="input-text-1">
-																			<span>
-																				<input type="date" size="8" class="date" name="date">
-																			</span>
-																		</p>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="label-time"><label>Horario:</label></td>
-																	<td class="time">
-																		<p>
-																			<span>De:</span>
-																			<select>
-																				<option>Hora</option>
-																				<option>00</option>
-																				<option>01</option>
-																				<option>02</option>
-																				<option>03</option>
-																				<option>04</option>
-																				<option>05</option>
-																				<option>06</option>
-																				<option>07</option>
-																				<option>08</option>
-																				<option>09</option>
-																				<option>10</option>
-																				<option>11</option>
-																				<option>12</option>
-																			</select>
-																			<b>:</b>
-																			<select>
-																				<option>Minuto</option>
-																				<option>00</option>
-																				<option>15</option>
-																				<option>30</option>
-																				<option>45</option>
-																			</select>
-																			<select>
-																				<option>PM</option>
-																				<option>AM</option>
-																			</select>
-																		</p>
+													<?php if(!$form_submited) : ?>
+														<h3>Realiza tu reservación</h3>
+														<p>Seleccione la Fecha, Hora de Inicio y Final de su Reservación así como también escriba su Nombre Completo, Teléfono ó Celular, Email.</p>
+														<p>Si tiene algunas Especificaciones Adicionales para su Reservación escribalas en el campo de Información Adicional.</p>
+														<form action="reservaciones.php" method="post">
+															<div class="reservations-wrapper">
+																<table class="reservations">
 																		
-																		<p>
-																			<span>Hasta:</span>
-																			<select>
-																				<option>Hora</option>
-																				<option>00</option>
-																				<option>01</option>
-																				<option>02</option>
-																				<option>03</option>
-																				<option>04</option>
-																				<option>05</option>
-																				<option>06</option>
-																				<option>07</option>
-																				<option>08</option>
-																				<option>09</option>
-																				<option>10</option>
-																				<option>11</option>
-																				<option>12</option>
-																			</select>
-																			<b>:</b>
-																			<select>
-																				<option>Minuto</option>
-																				<option>00</option>
-																				<option>15</option>
-																				<option>30</option>
-																				<option>45</option>
-																			</select>
-																			<select>
-																				<option>PM</option>
-																				<option>AM</option>
-																			</select>
-																		</p>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="label"><label>Nombre:</label></td>
-																	<td><p class="input-text-1"><span><input type="text" /></span></p></td>
-																</tr>
-																<tr><td class="spacer" colspan="2"></td></tr>
-																<tr>
-																	<td class="label"><label>Teléfono:</label></td>
-																	<td>
-																		<p class="input-text-1 input-text-1-error"><span><input type="text" /></span></p>
-																		<p class="error-message"><s>Escribe solo números</s></p>
-																	</td>
-																</tr>
-																<tr><td class="spacer" colspan="2"></td></tr>
-																<tr>
-																	<td class="label"><label>E-mail:</label></td>
-																	<td><p class="input-text-1"><span><input type="text" /></span></p></td>
-																</tr>
-																<tr><td class="spacer" colspan="2"></td></tr>
-																<tr>
-																	<td class="label notes"><label>Notas Extras</label></td>
-																	<td>
-																		<div class="text-area-2">
-																			<div class="top">
-																				<textarea></textarea>
+																	<?php if(isset($form_error) && $form_error == true): ?>
+																	<tr>
+																		<td colspan="2">
+																			<div class="top-error-message">
+																				Hay Errores en tu Reservación
 																			</div>
-																			<div class="bottom"></div>
-																		</div>
-																	</td>
-																</tr>
-																<tr><td class="spacer" colspan="2"></td></tr>
-																<tr>
-																	<td></td>
-																	<td colspan="2">
-																		<div class="show-all">
-																			<button class="submit"><span>Enviar Reservación</span></button>
-																		</div>
-																	</td>
-																</tr>
-															</table>
-														</div><!-- END .reservations-wrapper -->
-													</form>
-													<h3><a href="#">Información necesaria antes de realizar una reservación.</a></h3>
-													<p>In sed odio libero, vitae elementum urna. Vestibulum et ligula sed lectus blandit pretium in non metus. Donec dapibus, ipsum vel vehicula tempor, purus urna vestibulum mi, eu tempor elit turpis vitae enim. Duis porttitor mi sed nisi rhoncus at porta tellus sagittis. Duis eget sapien metus, gravida auctor nulla.</p>
-													<div class="success">
-														<p><b>Gracias</b></p>
-														<p>Tu reservación ha sido enviada</p>
+																		</td>
+																	</tr>
+																	<?php endif; ?>
+
+																	<tr>
+																		<td class="label"><label>Fecha:</label></td>
+																		<td>
+																			<p class="input-text-1 <?php echo $empty_date_error_class; ?>">
+																				<span>																				
+																					<input type="date" size="8" class="date" name="date" value="<?php echo $date; ?>">
+																				</span>
+																			</p>
+																			<?php if(isset($empty_date_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_date_message; ?></s></p>
+																			<?php endif; ?>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="label-time"><label>Horario:</label></td>
+																		<td class="time">
+																			<p>
+																				<span>De:</span>
+																				<select name="from-hour">
+																						<option>Hora</option>
+																						<option <?php if($from_hour == '0') echo 'selected'; ?>>0</option>
+																						<option <?php if($from_hour == '1') echo 'selected'; ?>>1</option>
+																						<option <?php if($from_hour == '2') echo 'selected'; ?>>2</option>
+																						<option <?php if($from_hour == '3') echo 'selected'; ?>>3</option>
+																						<option <?php if($from_hour == '4') echo 'selected'; ?>>4</option>
+																						<option <?php if($from_hour == '5') echo 'selected'; ?>>5</option>
+																						<option <?php if($from_hour == '6') echo 'selected'; ?>>6</option>
+																						<option <?php if($from_hour == '7') echo 'selected'; ?>>7</option>
+																						<option <?php if($from_hour == '8') echo 'selected'; ?>>8</option>
+																						<option <?php if($from_hour == '9') echo 'selected'; ?>>9</option>
+																						<option <?php if($from_hour == '10') echo 'selected'; ?>>10</option>
+																						<option <?php if($from_hour == '11') echo 'selected'; ?>>11</option>
+																						<option <?php if($from_hour == '12') echo 'selected'; ?>>12</option>
+																					</select>
+																				<b>:</b>
+																				<select name="from-minute">
+																					<option>Minuto</option>
+																					<option <?php if($from_minute == '00') echo 'selected'; ?>>00</option>
+																					<option <?php if($from_minute == '15') echo 'selected'; ?>>15</option>
+																					<option <?php if($from_minute == '30') echo 'selected'; ?>>30</option>
+																					<option <?php if($from_minute == '45') echo 'selected'; ?>>45</option>
+																				</select>
+																				<select name="from-meridian">
+																					<option>am - pm</option>
+																					<option <?php if($from_meridian == 'pm') echo 'selected'; ?>>pm</option>
+																					<option <?php if($from_meridian == 'am') echo 'selected'; ?>>am</option>
+																				</select>
+																			</p>
+
+																			<?php if(isset($empty_from_hour_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_from_hour_message; ?></s></p>
+																			<?php endif; ?>
+
+																			<?php if(isset($empty_from_meridian_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_from_meridian_message; ?></s></p>
+																			<?php endif; ?>
+
+																			<p>
+																				<span>Hasta:</span>
+																				<select name="to-hour">
+																					<option>Hora</option>
+																					<option <?php if($to_hour == '0') echo 'selected'; ?>>0</option>
+																					<option <?php if($to_hour == '1') echo 'selected'; ?>>1</option>
+																					<option <?php if($to_hour == '2') echo 'selected'; ?>>2</option>
+																					<option <?php if($to_hour == '3') echo 'selected'; ?>>3</option>
+																					<option <?php if($to_hour == '4') echo 'selected'; ?>>4</option>
+																					<option <?php if($to_hour == '5') echo 'selected'; ?>>5</option>
+																					<option <?php if($to_hour == '6') echo 'selected'; ?>>6</option>
+																					<option <?php if($to_hour == '7') echo 'selected'; ?>>7</option>
+																					<option <?php if($to_hour == '8') echo 'selected'; ?>>8</option>
+																					<option <?php if($to_hour == '9') echo 'selected'; ?>>9</option>
+																					<option <?php if($to_hour == '10') echo 'selected'; ?>>10</option>
+																					<option <?php if($to_hour == '11') echo 'selected'; ?>>11</option>
+																					<option <?php if($to_hour == '12') echo 'selected'; ?>>12</option>
+																				</select>
+																				<b>:</b>
+																				<select name="to-minute">
+																					<option>Minuto</option>
+																					<option <?php if($to_minute == '00') echo 'selected'; ?>>00</option>
+																					<option <?php if($to_minute == '15') echo 'selected'; ?>>15</option>
+																					<option <?php if($to_minute == '30') echo 'selected'; ?>>30</option>
+																					<option <?php if($to_minute == '45') echo 'selected'; ?>>45</option>
+																				</select>
+																				<select name="to-meridian">
+																					<option>am - pm</option>
+																					<option <?php if($to_meridian == 'pm') echo 'selected'; ?>>pm</option>
+																					<option <?php if($to_meridian == 'am') echo 'selected'; ?>>am</option>
+																				</select>
+																			</p>
+
+																			<?php if(isset($empty_to_hour_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_to_hour_message; ?></s></p>
+																			<?php endif; ?>
+
+																			<?php if(isset($empty_to_meridian_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_to_meridian_message; ?></s></p>
+																			<?php endif; ?>
+
+																			<?php if(isset($incorrect_reservation_inteval)) : ?>
+																			<p class="error-message"><s><?php echo $incorrect_reservation_inteval; ?></s></p>
+																			<?php endif; ?>
+
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="label"><label>Nombre:</label></td>
+																		<td>
+																			<p class="input-text-1 <?php echo $empty_name_error_class; ?>">
+																				<span>
+																					<input type="text" name="name" value="<?php echo $name; ?>" />
+																				</span>
+																			</p>
+																			<?php if(isset($empty_name_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_name_message; ?></s></p>
+																			<?php endif; ?>
+																		</td>
+																	</tr>
+																	<tr><td class="spacer" colspan="2"></td></tr>
+																	<tr>
+																		<td class="label"><label>Teléfono<br>ó Celular:</label></td>
+																		<td>
+																			<p class="input-text-1 <?php echo $empty_phone_error_classs; ?>">
+																				<span>
+																					<input type="text" name="phone" value="<?php echo $phone; ?>" />
+																				</span>
+																			</p>
+																			<?php if(isset($empty_phone_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_phone_message; ?></s></p>
+																			<?php endif; ?>
+																		</td>
+																	</tr>
+																	<tr><td class="spacer" colspan="2"></td></tr>
+																	<tr>
+																		<td class="label"><label>E-mail:</label></td>
+																		<td>
+																			<p class="input-text-1 <?php echo $empty_email_error_classs; ?>">
+																				<span>
+																					<input type="text" name="email" value="<?php echo $email; ?>" />
+																				</span>
+																			</p>
+																			<?php if(isset($empty_email_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_email_message; ?></s></p>
+																			<?php endif; ?>
+																		</td>
+																	</tr>
+																	<tr><td class="spacer" colspan="2"></td></tr>
+																	<tr>
+																		<td class="label notes"><label>Información Adicional</label></td>
+																		<td>
+																			<div class="text-area-2">
+																				<div class="top">
+																					<textarea name="extra-notes"><?php echo $extra_notes; ?></textarea>
+																				</div>
+																				<div class="bottom"></div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr><td class="spacer" colspan="2"></td></tr>
+																	<tr>
+																		<td></td>
+																		<td colspan="2">
+																			<div class="show-all">
+																				<button class="submit" name="submit"><span>Enviar Reservación</span></button>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+															</div><!-- END .reservations-wrapper -->
+														</form>
+													<?php else: ?>
+														<h3>Aviso de Privacidad.</h3>
+														<p>Los datos solicitados en este formulario son solo para confirmar su reservación por Correo Electrónico ó por Teléfono, por lo tanto no se le dará un uso inadecuado por parte de Zazón Restaurant Bar.</p>
+														<div class="success">
+															<p><b>Gracias</b></p>
+															<p>Tu reservación ha sido enviada</p>
+														</div>
+														<div>
+														<?php 
+															if(isset($_POST['submit'])) {
+																$output = "Fecha: " . $date . "<br>";
+																$output .= "De: " . $from_hour . ":" . $from_minute . " " . $from_meridian ." a ";
+																$output .= $to_hour . ":" . $to_minute . " " . $to_meridian . "<br>";
+																$output .= "Nombre: " . $name . "<br>";
+																$output .= "Teléfono: " . $phone . "<br>";
+																$output .= "Email: " . $email . "<br>";
+																$output .= "Notas Extras: " . $extra_notes . "<br>";
+																echo $output;
+															}
+														?>	
 													</div>
+													<?php endif; ?>
 												</div><!-- END .post -->
 												<div class="clear"></div>
-												<p class="show-all last"><a href="#"><span>Volver a Inicio</span></a></p>
+												<p class="show-all last"><a href="/"><span>Volver a Inicio</span></a></p>
 											</div><!-- END .left-side -->
 											<div class="right-side">
 												<div class="sidebar-block-1">
@@ -239,7 +307,7 @@
 								</td><!-- END .homepage-about -->
 							</tr>
 							<tr>
-								<td class="main-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>go back to the top</span></a></p></td>
+								<td class="main-content-wrapper-bottom"><p class="back-top"><a href="#top"><span>Ir hacia arriba</span></a></p></td>
 							</tr>
 						</table>
 					</div><!-- END .homepage-wrapper -->
