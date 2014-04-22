@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 
 	if(!isset($empty_from_hour_message) && $from_meridian == 'am - pm'):
 		$form_error = true;
-		$empty_from_meridian_message = 'Elija am ó pm';
+		$empty_from_meridian_message = 'Elija am ó pm de la Hora de Inicio';
 	endif;
 
 	if(!isset($empty_from_hour_message) && !isset($empty_from_meridian_message) && $to_hour == 'Hora'):
@@ -69,8 +69,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 		$to_minute = '00';
 	endif;
 
-	if(!isset($empty_to_hour_message) && !isset($empty_from_meridian_message) && $to_meridian == 'am - pm'):
-		$empty_to_meridian_message = 'Elija am ó pm';
+	if(!isset($empty_from_hour_message) && !isset($empty_to_hour_message) && !isset($empty_from_meridian_message) && $to_meridian == 'am - pm'):
+		$empty_to_meridian_message = 'Elija am ó pm de la hora de Finalización';
 	else:
 		$empty_to_meridian_message = null;
 	endif;

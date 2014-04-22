@@ -117,15 +117,7 @@
 																					<option <?php if($from_meridian == 'pm') echo 'selected'; ?>>pm</option>
 																					<option <?php if($from_meridian == 'am') echo 'selected'; ?>>am</option>
 																				</select>
-																			</p>
-
-																			<?php if(isset($empty_from_hour_message)) : ?>
-																			<p class="error-message"><s><?php echo $empty_from_hour_message; ?></s></p>
-																			<?php endif; ?>
-
-																			<?php if(isset($empty_from_meridian_message)) : ?>
-																			<p class="error-message"><s><?php echo $empty_from_meridian_message; ?></s></p>
-																			<?php endif; ?>
+																			</p>																			
 
 																			<p>
 																				<span>Hasta:</span>
@@ -159,6 +151,14 @@
 																					<option <?php if($to_meridian == 'am') echo 'selected'; ?>>am</option>
 																				</select>
 																			</p>
+
+																			<?php if(isset($empty_from_hour_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_from_hour_message; ?></s></p>
+																			<?php endif; ?>
+
+																			<?php if(isset($empty_from_meridian_message)) : ?>
+																			<p class="error-message"><s><?php echo $empty_from_meridian_message; ?></s></p>
+																			<?php endif; ?>
 
 																			<?php if(isset($empty_to_hour_message)) : ?>
 																			<p class="error-message"><s><?php echo $empty_to_hour_message; ?></s></p>
