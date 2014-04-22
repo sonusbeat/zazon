@@ -1,3 +1,4 @@
+<?php include_once('process-reservation.php'); ?>
 <!DOCTYPE html>
 <html lang="es-MX">
 	<head>
@@ -50,9 +51,14 @@
 													<a href="/">Volver al Inicio</a>
 												</div>
 												<div class="post">
+													
+													<div>
+														<?php var_dump($post_array); ?>	
+													</div>
+
 													<h3>Realiza tu reservación</h3>
 													<p>Selecciona la Fecha y Hora así como tu nombre completo, teléfono, email y si tienes algunas especificaciones extras escribelas en notas extras.</p>
-													<form action="">
+													<form action="reservaciones.php" method="post">
 														<div class="reservations-wrapper">
 															<table class="reservations">
 																<tr>
@@ -67,7 +73,7 @@
 																	<td>
 																		<p class="input-text-1">
 																			<span>
-																				<input type="date" size="8" class="date">
+																				<input type="date" size="8" class="date" name="date">
 																			</span>
 																		</p>
 																	</td>
@@ -172,7 +178,11 @@
 																<tr><td class="spacer" colspan="2"></td></tr>
 																<tr>
 																	<td></td>
-																	<td colspan="2"><p class="show-all"><a href="#"><span>Enviar Reservación</span></a></p></td>
+																	<td colspan="2">
+																		<div class="show-all">
+																			<button class="submit"><span>Enviar Reservación</span></button>
+																		</div>
+																	</td>
 																</tr>
 															</table>
 														</div><!-- END .reservations-wrapper -->
@@ -185,7 +195,7 @@
 													</div>
 												</div><!-- END .post -->
 												<div class="clear"></div>
-												<p class="show-all last"><a href="#"><span>Back to Homepage</span></a></p>
+												<p class="show-all last"><a href="#"><span>Volver a Inicio</span></a></p>
 											</div><!-- END .left-side -->
 											<div class="right-side">
 												<div class="sidebar-block-1">

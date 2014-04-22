@@ -123,15 +123,38 @@ code { margin: 0 40px 25px 40px; padding: 20px 23px; color: #004a7b; border: 1px
 
 .main-spacer { height: 12px; line-height: 12px; margin: 0 0 15px 0; background: url(../images/main-spacer-1.png) center center no-repeat; }
 
-.show-all { margin: 0 !important; padding: 0 0 15px 0 !important; cursor: pointer; overflow: hidden; }
+.show-all { 
+	margin: 0 !important;
+	padding: 0 0 15px 0 !important;
+	/*cursor: pointer;*/
+	/*overflow: hidden;*/
+}
 
-.show-all a { height: 23px; padding: 0 6px 0 0; margin: 0; background: url(../images/btn-show-all-right-bg.png) top right no-repeat; color: #76452f; display: block; height: 34px; font-size: 14px; font-weight: bold; text-decoration: none; }
+.show-all button { 
+	background: url(../images/btn-show-all-right-bg.png) top right no-repeat;
+	border: none;
+	color: #76452f;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	height: 34px;
+	margin: 0;
+	padding: 0 5px 0 0;
+}
 
-.show-all a span { background: url(../images/btn-show-all-left-bg.png) top left no-repeat; display: block; height: 26px; text-align: center; padding: 8px 0 0 6px; }
+.show-all button span { 
+	background: url(../images/btn-show-all-left-bg.png) top left no-repeat;
+	display: block;
+	height: 26px;
+	padding: 8px 4px 0 8px;
+}
 
-.show-all a:hover { color: #a65600; background: url(../images/btn-show-all-right-bg.png) right -34px no-repeat; }
+.show-all button:hover {
+	color: #a65600;
+	background: url(../images/btn-show-all-right-bg.png) right -34px no-repeat;
+}
 
-.show-all a:hover span { background: url(../images/btn-show-all-left-bg.png) left -34px no-repeat; }
+.show-all button:hover span { background: url(../images/btn-show-all-left-bg.png) left -34px no-repeat; }
 
 .back-top { margin: 0; padding: 0; }
 
