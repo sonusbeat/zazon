@@ -177,42 +177,68 @@
 																	<tr>
 																		<td class="label"><label>Nombre:</label></td>
 																		<td>
-																			<p class="input-text-1 <?php echo $empty_name_error_class; ?>">
+																			<p class="input-text-1 <?php echo $error_class; ?>">
 																				<span>
 																					<input type="text" name="name" value="<?php echo $name; ?>" />
 																				</span>
 																			</p>
+																			
 																			<?php if(isset($empty_name_message)) : ?>
-																			<p class="error-message"><s><?php echo $empty_name_message; ?></s></p>
+																				<p class="error-message"><s><?php echo $empty_name_message; ?></s></p>
 																			<?php endif; ?>
+
+																			<?php if(isset($name_length_value_error_message)) : ?>
+																				<p class="error-message">
+																					<s><?php echo $name_length_value_error_message; ?></s>
+																				</p>
+																			<?php endif; ?>
+
 																		</td>
 																	</tr>
 																	<tr><td class="spacer" colspan="2"></td></tr>
 																	<tr>
 																		<td class="label"><label>Teléfono<br>ó Celular:</label></td>
 																		<td>
-																			<p class="input-text-1 <?php echo $empty_phone_error_classs; ?>">
+																			<p class="input-text-1 <?php echo $error_class; ?>">
 																				<span>
 																					<input type="text" name="phone" value="<?php echo $phone; ?>" />
 																				</span>
 																			</p>
+
 																			<?php if(isset($empty_phone_message)) : ?>
-																			<p class="error-message"><s><?php echo $empty_phone_message; ?></s></p>
+																				<p class="error-message"><s><?php echo $empty_phone_message; ?></s></p>
 																			<?php endif; ?>
+
+																			<?php if(isset($phone_integer_error)) : ?>
+																				<p class="error-message"><s><?php echo $phone_integer_error; ?></s></p>
+																			<?php endif; ?>	
+
+																			<?php if(isset($phone_length_value_error_message)) : ?>
+																				<p class="error-message">
+																					<s><?php echo $phone_length_value_error_message; ?></s>
+																				</p>
+																			<?php endif; ?>
+
 																		</td>
 																	</tr>
 																	<tr><td class="spacer" colspan="2"></td></tr>
 																	<tr>
 																		<td class="label"><label>E-mail:</label></td>
 																		<td>
-																			<p class="input-text-1 <?php echo $empty_email_error_classs; ?>">
+																			<p class="input-text-1 <?php echo $error_class; ?>">
 																				<span>
 																					<input type="text" name="email" value="<?php echo $email; ?>" />
 																				</span>
 																			</p>
+
 																			<?php if(isset($empty_email_message)) : ?>
-																			<p class="error-message"><s><?php echo $empty_email_message; ?></s></p>
+																				<p class="error-message"><s><?php echo $empty_email_message; ?></s></p>
 																			<?php endif; ?>
+
+																			<?php if(isset($email_format_message)) : ?>
+																				<p class="error-message"><s><?php echo $email_format_message; ?></s></p>
+																			<?php endif; ?>
+
 																		</td>
 																	</tr>
 																	<tr><td class="spacer" colspan="2"></td></tr>
@@ -246,20 +272,6 @@
 															<p><b>Gracias</b></p>
 															<p>Tu reservación ha sido enviada</p>
 														</div>
-														<div>
-														<?php 
-															if(isset($_POST['submit'])) {
-																$output = "Fecha: " . $date . "<br>";
-																$output .= "De: " . $from_hour . ":" . $from_minute . " " . $from_meridian ." a ";
-																$output .= $to_hour . ":" . $to_minute . " " . $to_meridian . "<br>";
-																$output .= "Nombre: " . $name . "<br>";
-																$output .= "Teléfono: " . $phone . "<br>";
-																$output .= "Email: " . $email . "<br>";
-																$output .= "Notas Extras: " . $extra_notes . "<br>";
-																echo $output;
-															}
-														?>	
-													</div>
 													<?php endif; ?>
 												</div><!-- END .post -->
 												<div class="clear"></div>

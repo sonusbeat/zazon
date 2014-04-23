@@ -17,8 +17,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 	# ---- Validación ---- #
 
 	$form_error = false;
+	$form_submited = false;
 
-	if(empty($date)):
+	if(!isset($date) || $date === ''):
 		$form_error = true;
 		$empty_date_message = 'Elija la Fecha de Reservación';
 		$empty_date_error_class = 'input-text-1-error';
@@ -76,35 +77,131 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 		$empty_to_meridian_message = null;
 	endif;
 
-	if(empty($name)):
+	if(!isset($name) || $name === ''):
 		$form_error = true;
 		$empty_name_message = 'Debe escribir su Nombre';
-		$empty_name_error_class = 'input-text-1-error';
+		$error_class = 'input-text-1-error';
 	else:
 		$empty_name_message = null;
-		$empty_name_error_class = '';
+		$error_class = '';
 	endif;
 
-	if(empty($phone)):
+	if(!isset($empty_name_message)):
+
+		if (strlen($name) <= 3):
+			$form_error = true;
+			$name_length_value_error_message = 'Su nombre debe ser mayor a 3 caracteres';
+			$error_class = 'input-text-1-error';
+		elseif(strlen($name) > 30):
+			$form_error = true;
+			$name_length_value_error_message = 'Su nombre no debe ser menor a 30 caracteres';
+			$error_class = 'input-text-1-error';
+		else:
+			$name_max_value_error_message = null;
+			$name_max_value_error_class = '';
+		endif;
+
+	endif;
+
+
+	if(!isset($phone) || $phone === ''):
 		$form_error = true;
-		$empty_phone_message = 'Debe Escribir su Teléfono ó Celular';
-		$empty_phone_error_classs = 'input-text-1-error';
+		$empty_phone_message = 'Escriba su Número Teléfonico ó Celular';
+		$error_classs = 'input-text-1-error';
 	else:
 		$empty_phone_message = null;
-		$empty_phone_error_classs = '';
+		$error_classs = '';
 	endif;
 
-	if(empty($email)):
+	if(!isset($empty_phone_message)):
+
+		if(!intval($phone)) :
+			$form_error = true;
+			$phone_integer_error = "Escriba solo números";
+			$error_class = 'input-text-1-error';
+		else:
+			$phone_integer_error = null;
+			$error_class = '';
+		endif;
+
+		if(!isset($phone_integer_error)):
+
+			if(strlen($phone) < 6):
+				$form_error = true;
+				$phone_length_value_error_message = 'Debe ser mayor a 5 Dígitos';
+				$error_class = 'input-text-1-error';
+			elseif(strlen($phone) > 12):
+				$form_error = true;
+				$phone_length_value_error_message = 'Debe ser menor a 12 Dígitos';
+				$error_class = 'input-text-1-error';
+			else:
+				$phone_length_value_error_message = null;
+				$error_class = '';
+			endif;
+
+		endif;
+
+	endif;
+
+	if(!isset($email) || $email === ''):
 		$form_error = true;
 		$empty_email_message = "Escriba su Email";
-		$empty_email_error_classs = 'input-text-1-error';
+		$error_classs = 'input-text-1-error';
 	else:
 		$empty_email_message = null;
-		$empty_email_error_classs = '';
+		$error_classs = '';		
+	endif;
+	
+	if(!isset($empty_email_message)):
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)):
+			$form_error = true;
+			$email_format_message = "Formato de Email Incorrecto";
+			$error_classs = 'input-text-1-error';
+		else:
+			$email_format_message = null;
+			$error_classs = '';
+		endif;
 	endif;
 
-	if(!$form_error) :
-		$form_submited = true;		
+	if(!$form_error) :				
+
+		if(!isset($extra_notes) || $extra_notes === ''):
+			$extra_notes = 'Ninguna Información Adicional Enviada';
+		endif;
+
+		# Email Recipients
+    $to = "reservaciones@zazon.mx";
+
+    # Email Subject
+    $subject = "Correo de rbgames.com.mx enviado a las ".strftime("%T", time());
+
+    #Email Message
+    
+    $mail = "<b>Fecha de Reservación: </b>{$date}<br />";
+    $mail .= "<b>Hora de Inicio: </b>{$from_hour}:{$from_minute} {$from_meridian}<br />";
+    $mail .= "<b>Hora de Finalización: </b>{$to_hour}:{$to_minute} {$to_meridian}<br />";
+    $mail .= "<b>Nombre: </b>{$name}<br />";
+    $mail .= "<b>Teléfono/Celular: </b>{$phone}<br />";
+    $mail .= "<b>Email: </b>{$email}<br />";
+    $mail .= "<b>Información Adicional: </b>{$extra_notes}<br />";
+    $mail = wordwrap($mail, 70);
+
+    # Email From
+    $from = "{$email}";
+
+    #Email Headers
+    $headers = "From: {$from}\n";
+    $headers .= "Reply-To: {$from}\n";
+    $headers .= "X-Mailer: PHP/".phpversion()."\n";
+    $headers .= "MIME-Version: 1.0\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8";
+
+    # Sending Email
+    mail($to, $subject, $mail, $headers);
+
+    # Confirm Reservation
+    $form_submited = true;
+
 	endif;
 
 else:
