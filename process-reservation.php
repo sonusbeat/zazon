@@ -173,7 +173,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
     $to = "reservaciones@zazon.mx";
 
     # Email Subject
-    $subject = "Correo de rbgames.com.mx enviado a las ".strftime("%T", time());
+    $subject = "Reservación de Zazon.mx Enviada a las ".strftime("%T", time());
 
     #Email Message
     
