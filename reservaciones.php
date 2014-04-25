@@ -65,7 +65,7 @@
 																			</div>
 																		</td>
 																	</tr>
-																	<?php endif; ?>
+																	<?php endif; ?>																	
 
 																	<tr>
 																		<td class="label"><label>Fecha:</label></td>
