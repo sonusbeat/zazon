@@ -52,10 +52,7 @@
 												</div>
 												<div class="post">													
 													
-													<?php if(!$form_submited) : ?>
-														<h3>Realiza tu reservación</h3>
-														<p>Seleccione la Fecha, Hora de Inicio y Final de su Reservación así como también escriba su Nombre Completo, Teléfono ó Celular, Email.</p>
-														<p>Si tiene algunas Especificaciones Adicionales para su Reservación escribalas en el campo de Información Adicional.</p>
+													<?php if(!$form_submited) : ?>														
 														<form action="reservaciones.php" method="post">
 															<div class="reservations-wrapper">
 																<table class="reservations">
@@ -75,7 +72,8 @@
 																		<td>
 																			<p class="input-text-1 <?php echo $empty_date_error_class; ?>">
 																				<span>																				
-																					<input type="date" size="8" class="date" name="date" value="<?php echo $date; ?>">
+																					<input type="date" size="8" class="date" name="date" 
+																						value="<?php echo $date; ?>">
 																				</span>
 																			</p>
 																			<?php if(isset($empty_date_message)) : ?>
@@ -243,6 +241,36 @@
 																	</tr>
 																	<tr><td class="spacer" colspan="2"></td></tr>
 																	<tr>
+																		<td class="label"><label>Número de Personas:</label></td>
+																		<td>
+																			<p class="input-text-1 <?php echo $error_class; ?>">
+																				<span class="quantity">
+																					<input type="text" name="people-quantity" value="<?php echo $people_quantity; ?>" maxlength = "5" />
+																				</span>
+																			</p>
+
+																			<?php if(isset($empty_people_quantity_message)) : ?>
+																				<span class="error-message-quantity">
+																					<s><?php echo $empty_people_quantity_message; ?></s>
+																				</span>
+																			<?php endif; ?>
+
+																			<?php if(isset($zero_quantity_people_message)) : ?>
+																				<span class="error-message-quantity">
+																					<s><?php echo $zero_quantity_people_message; ?></s>
+																				</span>
+																			<?php endif; ?>																			
+
+																			<?php if(isset($intval_quantity_people_message)) : ?>
+																				<span class="error-message-quantity">
+																					<s><?php echo $intval_quantity_people_message; ?></s>
+																				</span>
+																			<?php endif; ?>																			
+
+																		</td>
+																	</tr>
+																	<tr><td class="spacer" colspan="2"></td></tr>
+																	<tr>
 																		<td class="label notes"><label>Información Adicional</label></td>
 																		<td>
 																			<div class="text-area-2">
@@ -266,51 +294,26 @@
 															</div><!-- END .reservations-wrapper -->
 														</form>
 													<?php else: ?>
-														<h3>Aviso de Privacidad.</h3>
-														<p>Los datos solicitados en este formulario son solo para confirmar su reservación por Correo Electrónico ó por Teléfono, por lo tanto no se le dará un uso inadecuado por parte de Zazón Restaurant Bar.</p>
+														<h3>Reservación Enviada</h3>
 														<div class="success">
 															<p><b>Gracias</b></p>
 															<p>Tu reservación ha sido enviada</p>
+															<p>Uno de nuestros representantes se pondrá en contacto con usted para confirmar su reservación lo más pronto posible</p>
 														</div>
 													<?php endif; ?>
 												</div><!-- END .post -->
 												<div class="clear"></div>
-												<p class="show-all last"><a href="/"><span>Volver a Inicio</span></a></p>
 											</div><!-- END .left-side -->
 											<div class="right-side">
 												<div class="sidebar-block-1">
-													<div class="title"><h3>About reservations</h3></div>
+													<div class="title"><h3>Realiza tu Reservación</h3></div>
 													<div class="basic-1">
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim gravida justo quis bibendum. Phasellus urna tortor, porta eu porta sit amet, molestie at velit. Sed a ullamcorper justo.</p>
-														<p>Praesent vulputate gravida metus, eget rhoncus turpis ultrices ut. Sed gravida, magna in porta ultricies, nulla mauris luctus odio, nec blandit erat metus congue metus. Vivamus non justo vitae tellus blandit sagittis ut ut mi. Sed id dolor sed nibh vehicula vulputate. Aliquam eu eros metus.</p>
-														<p>In aliquam leo sed est feugiat suscipit nulla ligula orcitta:</p>
-														<p class="last"><span>+371 7153 967834</span></p>
+														<p>Seleccione la Fecha, Hora de Inicio y Final de su Reservación así como también escriba su Nombre Completo, Teléfono ó Celular, Email.</p>
+														<p>Si tiene algunas Especificaciones Adicionales para su Reservación escribalas en el campo de Información Adicional.</p>
+														<h4>Privacidad</h4>
+														<p>Los datos que envies solo serán utilizados para confirmar tu Reservación por medio del Teléfono Fijo ó Celular y también se enviará una confirmación de tu Reservación a su Correo Electrónico</p>
+														<p class="last"><span>(33) 12-04-98-06</span></p>
 													</div><!-- END .basic-1 -->
-												</div><!-- END .sidebar-block-1 -->
-												<div class="sidebar-block-1">
-													<div class="title"><h3>Latest news</h3><a href="#">show all</a></div>
-													<div class="latest-news">
-														<div class="news-item">
-															<p class="news-title"><a href="#" class="title">Aliquam in condimentum augue</a></p>
-															<p>Cras vulputate dui at felis varius et consecte tur risus viverra. Vivamus commodo gravida malesuada.consequat dui.</p>
-															<p class="last"><a href="#" class="more-link">Read more</a></p>
-														</div>
-														<div class="news-item">
-															<p class="news-title"><a href="#" class="title">Mauris tristique, orci eu elemen accumsan, arcu arcu porttitor</a></p>
-															<p>Fusce consectetur consectetur odio ac hendrerit. In hac habitasse platea dictumst. Suspendisse adipiscing tempus leo et pulvinar. Aliquam nec tellus lectus.</p>
-															<p class="last"><a href="#" class="more-link">Read more</a></p>
-														</div>
-														<div class="news-item">
-															<p class="news-title"><a href="#" class="title">Etiam ultricies euismod turpis</a></p>
-															<p>Vivamus commodo gravida alesuada cons equat dui sociis natoue penatibus et magnis.</p>
-															<p class="last"><a href="#" class="more-link">Read more</a></p>
-														</div>
-														<div class="news-item last">
-															<p class="news-title"><a href="#" class="title">Aliquam in condimentum augue</a></p>
-															<p>Cras vulputate dui at felis varius et consecte tur risus viverra. Vivamus commodo gravida malesuada.consequat dui.</p>
-															<p class="last"><a href="#" class="more-link">Read more</a></p>
-														</div>
-													</div><!-- END .latest-news -->
 												</div><!-- END .sidebar-block-1 -->
 											</div><!-- END .right-side -->
 											<div class="clear"></div>

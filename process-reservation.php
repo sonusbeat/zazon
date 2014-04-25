@@ -2,17 +2,18 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') :
 
-	$date          = isset($_POST['date']) ? $_POST['date'] : '' ;
-	$from_hour     = isset($_POST['from-hour']) ? $_POST['from-hour'] : '' ;
-	$from_minute   = isset($_POST['from-minute']) ? $_POST['from-minute'] : '' ;
-	$from_meridian = isset($_POST['from-meridian']) ? $_POST['from-meridian'] : '' ;
-	$to_hour       = isset($_POST['to-hour']) ? $_POST['to-hour'] : '' ;
-	$to_minute     = isset($_POST['to-minute']) ? $_POST['to-minute'] : '' ;
-	$to_meridian   = isset($_POST['to-meridian']) ? $_POST['to-meridian'] : '' ;
-	$name          = isset($_POST['name']) ? trim($_POST['name']) : '' ;
-	$phone         = isset($_POST['phone']) ? trim($_POST['phone']) : '' ;
-	$email         = isset($_POST['email']) ? trim($_POST['email']) : '' ;
-	$extra_notes   = isset($_POST['extra-notes']) ? trim($_POST['extra-notes']) : '' ;
+	$date            = isset($_POST['date']) ? $_POST['date'] : '' ;	
+	$from_hour       = isset($_POST['from-hour']) ? $_POST['from-hour'] : '' ;
+	$from_minute     = isset($_POST['from-minute']) ? $_POST['from-minute'] : '' ;
+	$from_meridian   = isset($_POST['from-meridian']) ? $_POST['from-meridian'] : '' ;
+	$to_hour         = isset($_POST['to-hour']) ? $_POST['to-hour'] : '' ;
+	$to_minute       = isset($_POST['to-minute']) ? $_POST['to-minute'] : '' ;
+	$to_meridian     = isset($_POST['to-meridian']) ? $_POST['to-meridian'] : '' ;
+	$name            = isset($_POST['name']) ? trim($_POST['name']) : '' ;
+	$phone           = isset($_POST['phone']) ? trim($_POST['phone']) : '' ;
+	$email           = isset($_POST['email']) ? trim($_POST['email']) : '' ;
+	$people_quantity = isset($_POST['people-quantity']) ? trim($_POST['people-quantity']) : '' ;
+	$extra_notes     = isset($_POST['extra-notes']) ? trim($_POST['extra-notes']) : '' ;
 
 	# ---- Validación ---- #
 
@@ -103,7 +104,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 
 	endif;
 
-
 	if(!isset($phone) || $phone === ''):
 		$form_error = true;
 		$empty_phone_message = 'Escriba su Número Teléfonico ó Celular';
@@ -161,9 +161,73 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 			$email_format_message = null;
 			$error_classs = '';
 		endif;
+	endif;	
+	
+	if(!isset($empty_email_message)):
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)):
+			$form_error = true;
+			$email_format_message = "Formato de Email Incorrecto";
+			$error_classs = 'input-text-1-error';
+		else:
+			$email_format_message = null;
+			$error_classs = '';
+		endif;
 	endif;
 
-	if(!$form_error) :				
+	if(!isset($people_quantity) || $people_quantity === ''):
+		$form_error = true;
+		$empty_people_quantity_message = "Escriba la Cantidad de Personas para su Reservación";
+		$error_classs = 'input-text-1-error';
+	else:
+		$empty_people_quantity_message = null;
+		$error_classs = '';
+	endif;
+
+	if(!isset($empty_people_quantity_message)):
+
+		if($people_quantity === 0 || $people_quantity === '0'):
+			$form_error = true;
+			$zero_quantity_people_message = "0 No es un Valor Válido para una Reservación";
+			$error_classs = 'input-text-1-error';
+		else:
+			$zero_quantity_people_message = null;
+			$error_classs = '';
+		endif;
+
+		if(!isset($zero_quantity_people_message)):
+			if(!intval($people_quantity)):
+				$form_error = true;
+				$intval_quantity_people_message = "Escriba solo Números";
+				$error_classs = 'input-text-1-error';
+			else:
+				$intval_quantity_people_message = null;
+				$error_classs = '';
+			endif;
+		endif;
+
+	endif;	
+
+	if(!$form_error) :
+
+		$date_array = explode('-', $date);
+
+		$months = [
+			'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+			'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+		];
+
+		$day = str_replace("0", "", $date_array[2]);
+		$month = str_replace("0", "", $date_array[1]);
+		$year = $date_array[0];
+
+		for($i = 0; $i <= count($months); $i++):
+			if($month == $i):
+				$month = $months[$i];
+				break;
+			endif;
+		endfor;
+	
+		$date_for_email = $day . " de " . $month . " del " . $year;
 
 		if(!isset($extra_notes) || $extra_notes === ''):
 			$extra_notes = 'Ninguna Información Adicional Enviada';
@@ -177,12 +241,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 
     #Email Message
     
-    $mail = "<b>Fecha de Reservación: </b>{$date}<br />";
+    $mail = "<b>Fecha de Reservación: </b>{$date_for_email}<br />";
     $mail .= "<b>Hora de Inicio: </b>{$from_hour}:{$from_minute} {$from_meridian}<br />";
     $mail .= "<b>Hora de Finalización: </b>{$to_hour}:{$to_minute} {$to_meridian}<br />";
     $mail .= "<b>Nombre: </b>{$name}<br />";
     $mail .= "<b>Teléfono/Celular: </b>{$phone}<br />";
     $mail .= "<b>Email: </b>{$email}<br />";
+    $mail .= "<b>Cantidad de Personas: </b>{$people_quantity}<br />";    
     $mail .= "<b>Información Adicional: </b>{$extra_notes}<br />";
     $mail = wordwrap($mail, 70);
 
@@ -205,19 +270,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') :
 	endif;
 
 else:
-	$date          = '' ;
-	$from_hour     = '' ;
-	$from_minute   = '' ;
-	$from_meridian = '' ;
-	$to_hour       = '' ;
-	$to_minute     = '' ;
-	$to_meridian   = '' ;
-	$name          = '' ;
-	$phone         = '' ;
-	$email         = '' ;
-	$extra_notes   = '' ;
-	$form_error = false;
-	$form_submited = false;
+	$date            = '' ;
+	$from_hour       = '' ;
+	$from_minute     = '' ;
+	$from_meridian   = '' ;
+	$to_hour         = '' ;
+	$to_minute       = '' ;
+	$to_meridian     = '' ;
+	$name            = '' ;
+	$phone           = '' ;
+	$email           = '' ;
+	$people_quantity = '';
+	$extra_notes     = '' ;
+	$form_error      = false;
+	$form_submited   = false;
 endif;
 
 ?>
