@@ -297,7 +297,7 @@
 														<h3>Reservación Enviada</h3>
 														<div class="success">
 															<p><b>Gracias</b></p>
-															<p>Tu reservación ha sido enviada</p>
+															<p>Su reservación ha sido enviada</p>
 															<p>Uno de nuestros representantes se pondrá en contacto con usted para confirmar su reservación lo más pronto posible</p>
 														</div>
 													<?php endif; ?>
